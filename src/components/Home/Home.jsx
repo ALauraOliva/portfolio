@@ -1,6 +1,10 @@
 import React from "react"
-import "../../scss/components/_home.scss"
 
 export const Home = () => {
-  return <div className="container">Home</div>
+  return (
+    <div className="container">
+      <h1>Andrea Laura</h1>
+      <div className="separatorPixel"></div>
+    </div>
+  )
 }
