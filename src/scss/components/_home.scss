@@ -1,12 +1,8 @@
 @use "../abstracts/variables";
 
-.container {
+.home_container {
   height: 100vh;
-  background-image: url("../../assets/backgroundHome.svg"); // Ajusta la ruta a tu archivo SVG
+  background-image: url("/src/assets/svg/backgroundHome.svg");
   background-size: cover;
   background-position: center bottom;
-  .separatorPixel {
-    background-image: url("../../assets/separatorSectionPixel.svg");
-    background-color: aqua;
-  }
 }
