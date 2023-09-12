@@ -1,8 +1,11 @@
 import React from "react"
 
-export const Nav = () => {
+export const Nav = ({ colorLinks }) => {
+  const navStyle = {
+    color: colorLinks,
+  }
   return (
-    <header className="nav_cont_global">
+    <header className="nav_cont_global" style={navStyle}>
       <img alt="logo" />
       <nav className="nav">
         <a target="/Home">Home</a>

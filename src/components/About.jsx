@@ -1,5 +1,9 @@
 import React from "react"
 
 export const About = () => {
-  return <section className="about_section">About</section>
+  return (
+    <section id="about" className="about_section">
+      About
+    </section>
+  )
 }
