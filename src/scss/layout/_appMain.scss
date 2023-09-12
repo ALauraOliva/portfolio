@@ -1,0 +1,29 @@
+.app_main {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  section {
+    scroll-snap-align: start;
+  }
+}
+.app_main::-webkit-scrollbar {
+  width: 7px;
+}
+
+.app_main::-webkit-scrollbar-thumb {
+  background-color: $primaryColor;
+  border-radius: 2px;
+}
+
+.app_main::-webkit-scrollbar-track {
+  background-color: $thirdColor;
+}
+
+// .projects_section {
+// }
+// .technologies_section {
+
+// }
+// .contact_section {
+
+// }

@@ -1,3 +1,3 @@
 # Personal Portfolio
 
-Read In Progress
+Welcome to my portfolio ... working

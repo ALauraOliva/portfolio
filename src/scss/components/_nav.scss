@@ -1,0 +1,19 @@
+.nav_cont_global {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  padding: 1vh;
+  z-index: 4;
+  width: calc(100% - 7px);
+  box-sizing: border-box;
+  height: fit-content;
+  background-color: transparent;
+}
+
+.nav {
+  display: flex;
+  width: 35%;
+  justify-content: space-around;
+  font-size: 1vw;
+}

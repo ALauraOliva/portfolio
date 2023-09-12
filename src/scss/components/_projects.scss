@@ -1,0 +1,17 @@
+.projects_section {
+  background-color: $sixthColor;
+  position: relative;
+  height: 100vh;
+  &::before {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    left: 50%;
+    width: 30%;
+    height: 50%;
+    border-radius: 50%;
+    background: inherit;
+    transform: translateX(-50%) translateY(50%);
+    bottom: 0px;
+  }
+}

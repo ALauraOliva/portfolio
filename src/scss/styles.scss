@@ -1,4 +1,9 @@
-@import "./base/body";
 @import "./abstracts/base";
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+@import "./layout/appMain";
 @import "./components/home";
-@import "./layout/gridGlobal";
+@import "./components/nav";
+@import "./components/about";
+@import "./components/projects";
+@import "./components/contact";
