@@ -1,5 +1,5 @@
 .projects_section {
-  background-color: $sixthColor;
+  background-color: $thirdColor;
   position: relative;
   height: 100vh;
   &::before {
@@ -12,6 +12,6 @@
     border-radius: 50%;
     background: inherit;
     transform: translateX(-50%) translateY(50%);
-    bottom: 0px;
+    bottom: 0rem;
   }
 }

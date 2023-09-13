@@ -5,15 +5,37 @@
   top: 0;
   padding: 1vh;
   z-index: 4;
-  width: calc(100% - 7px);
+  width: calc(100% - 0.7rem);
   box-sizing: border-box;
   height: fit-content;
   background-color: transparent;
-}
-
-.nav {
-  display: flex;
-  width: 35%;
-  justify-content: space-around;
-  font-size: 1vw;
+  .nav {
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+    font-size: 1vw;
+    list-style-type: none;
+    a {
+      text-decoration: none;
+      position: relative;
+      padding-bottom: 0.2rem;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0.4rem;
+        border-radius: 4px;
+        background-color: $primaryColor;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+      &:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+      }
+    }
+  }
 }

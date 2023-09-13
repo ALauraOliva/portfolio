@@ -1,18 +1,31 @@
 import React from "react"
 
 export const Nav = ({ colorLinks }) => {
-  const navStyle = {
-    color: colorLinks,
-  }
   return (
-    <header className="nav_cont_global" style={navStyle}>
+    <nav className="nav_cont_global">
       <img alt="logo" />
-      <nav className="nav">
-        <a target="/Home">Home</a>
-        <a target="#">About</a>
-        <a target="#">Projects</a>
-        <a target="#">Contact</a>
-      </nav>
-    </header>
+      <ul className="nav">
+        <li>
+          <a href="#home" style={{ color: colorLinks }}>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#about" style={{ color: colorLinks }}>
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#projects" style={{ color: colorLinks }}>
+            Projects
+          </a>
+        </li>
+        <li>
+          <a href="#contact" style={{ color: colorLinks }}>
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
   )
 }

@@ -6,7 +6,7 @@ import { Contact } from "./components/Contact"
 import { Nav } from "./components/Nav"
 
 function App() {
-  const [colorLinks, setColorLinks] = useState("white")
+  const [colorLinks, setColorLinks] = useState("#f2e8d5")
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,12 +20,12 @@ function App() {
         scrollPosition >= homeSection.offsetTop &&
         scrollPosition < aboutSection.offsetTop
       ) {
-        setColorLinks("white")
+        setColorLinks("#f2e8d5")
       } else if (
         scrollPosition >= aboutSection.offsetTop &&
         scrollPosition < projectsSection.offsetTop
       ) {
-        setColorLinks("black")
+        setColorLinks("#0c3a4d")
       } else if (
         scrollPosition >= projectsSection.offsetTop &&
         scrollPosition < contactSection.offsetTop
@@ -47,10 +47,10 @@ function App() {
   return (
     <main id="scroller" className="app_main">
       <Nav colorLinks={colorLinks} />
-      <Home />
-      <About />
-      <Projects />
-      <Contact />
+      <Home id="home" />
+      <About id="about" />
+      <Projects id="projects" />
+      <Contact id="contact" />
     </main>
   )
 }
