@@ -1,14 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap");
+
 .nav_cont_global {
   position: absolute;
   display: flex;
   justify-content: space-between;
   top: 0;
-  padding: 1vh;
+  padding: 0.5vw 1vw;
   z-index: 4;
   width: calc(100% - 0.7rem);
   box-sizing: border-box;
-  height: fit-content;
+  height: 5vh;
   background-color: transparent;
+  .nav_logo {
+    font-family: "Seaweed Script", cursive;
+    font-size: 3rem;
+    font-weight: 100;
+  }
   .nav {
     display: flex;
     width: 35%;
