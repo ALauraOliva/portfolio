@@ -55,13 +55,42 @@
   .about_techs {
     margin: 2rem 3rem;
     display: flex;
-    div {
-      flex: 1;
+    height: 30%;
+    @include tablet {
+      flex-direction: column;
+      align-content: space-evenly;
+    }
+    @include mobile {
+      flex-direction: column;
+      align-content: space-evenly;
+    }
+    .about_category {
+      flex: 1 0 0;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 2rem;
+      box-sizing: border-box;
       h3 {
         text-align: center;
         font-size: 2rem;
         color: $thirdColor;
       }
+      figure {
+        text-align: center;
+        svg,
+        img {
+          width: 5rem;
+          height: 5rem;
+        }
+      }
+    }
+    .about_stack {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 }
