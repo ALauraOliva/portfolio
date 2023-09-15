@@ -2,7 +2,7 @@
   background-color: $secondaryColor;
   position: relative;
   height: 100vh;
-  &::before {
+  &::after {
     position: absolute;
     content: "";
     z-index: 1;
@@ -15,20 +15,53 @@
     bottom: 0rem;
   }
   h1 {
-    text-align: center;
-    font-size: 15vw;
-    width: fit-content;
-    margin: 0 0 0 1vw;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    font-size: 12rem;
+    margin: 0 3rem;
+    padding: 6rem 0;
     color: $thirdColor;
+  }
+  .about_line {
+    flex-grow: 1;
+    border-top: 3px solid $thirdColor;
   }
   .about_content {
     display: flex;
-    margin: 0 1vw 0 1vw;
-    width: fit-content;
+    flex-direction: row;
+    margin: 0 3rem;
     color: $thirdColor;
+    gap: 3rem;
     p {
-      width: 50%;
-      font-size: 3rem;
+      flex: 1;
+      font-size: 2rem;
+      line-height: 3rem;
+      span {
+        font-weight: 600;
+        font-style: italic;
+      }
+    }
+  }
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 8rem;
+    margin: 0 3rem;
+    padding: 2rem 0;
+    color: $thirdColor;
+  }
+  .about_techs {
+    margin: 2rem 3rem;
+    display: flex;
+    div {
+      flex: 1;
+      h3 {
+        text-align: center;
+        font-size: 2rem;
+        color: $thirdColor;
+      }
     }
   }
 }

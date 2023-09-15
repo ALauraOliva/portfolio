@@ -4,27 +4,38 @@ export const About = () => {
   return (
     <section id="about" className="about_section">
       <h1>
-        about me <br />
+        about me <div className="about_line"></div>
       </h1>
-      <div className="about_content">
+      <article className="about_content">
         <p>
-          Graduada en Ingeniería de Sistemas en búsqueda de emocionantes
-          desafíos en el campo del desarrollo Full Stack, con un enfoque
-          particular en el <span>Front-end.</span> También poseo sólidas
-          habilidades en el
-          <span>Back-end</span>, lo que me permite comprender y abordar
-          proyectos de manera integral, desde la interfaz de usuario hasta la
-          gestión de datos en el back-end. Mi objetivo es contribuir al
-          desarrollo de <span>soluciones</span> tecnológicas innovadoras y
-          eficientes, aprovechando mi formación y pasión por la informática para
-          crear impacto en el mundo digital.
+          Graduated in <span>Systems Engineering</span>, in search of exciting
+          challenges in the field of Full Stack development, with a particular
+          focus on the
+          <span> Front-End</span>. I also possess strong skills in the{" "}
+          <span> Back End</span>, which allows me to comprehend and tackle
+          projects comprehensively, from user interface design to data
+          management in the backend.
         </p>
+        <p>
+          My goal is to contribute to the development of innovative and
+          efficient technological solutions, leveraging my education and passion
+          for delevopment to make an impact in the digital world.
+        </p>
+      </article>
+      <h2>
+        <div className="about_line"></div> technologies
+      </h2>
+      <article className="about_techs">
         <div>
-          <h2>Tecnologias</h2>
           <h3>Front-End</h3>
+        </div>
+        <div>
           <h3>Back-End</h3>
         </div>
-      </div>
+        <div>
+          <h3>Others</h3>
+        </div>
+      </article>
     </section>
   )
 }
