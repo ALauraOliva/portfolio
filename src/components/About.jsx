@@ -39,60 +39,64 @@ const techs = [
   { techName: "Scrum", icon: <DiScrum />, category: "other" },
   { techName: "Git", icon: <AiFillGithub />, category: "other" },
   { techName: "Slack", icon: <BsSlack />, category: "other" },
-  { techName: "GENEXUS", img: "src/assets/genexusIcon.png", category: "other" },
+  { techName: "Genexus", img: "src/assets/genexusIcon.png", category: "other" },
 ]
 export const About = () => {
   const categories = ["front", "back", "other"]
   return (
     <section id="about" className="about_section">
-      <h1>
-        about me <div className="about_line"></div>
-      </h1>
       <article className="about_content">
-        <p>
-          Graduated in <span>Systems Engineering</span>, in search of exciting
-          challenges in the field of Full Stack development, with a particular
-          focus on the
-          <span> Front-End</span>. I also possess strong skills in the
-          <span> Back End</span>, which allows me to comprehend and tackle
-          projects comprehensively, from user interface design to data
-          management in the backend.
-        </p>
-        <p>
-          My goal is to contribute to the development of innovative and
-          efficient technological solutions, leveraging my education and passion
-          for delevopment to make an impact in the digital world.
-        </p>
+        <h1>
+          about me <div className="about_line"></div>
+        </h1>
+        <div className="about_row">
+          <p>
+            Graduated in <span>Systems Engineering</span>, in search of exciting
+            challenges in the field of Full Stack development, with a particular
+            focus on the
+            <span> Front-End</span>. I also possess strong skills in the
+            <span> Back End</span>, which allows me to comprehend and tackle
+            projects comprehensively, from user interface design to data
+            management in the backend.
+          </p>
+          <p>
+            My goal is to contribute to the development of innovative and
+            efficient technological solutions, leveraging my education and
+            passion for delevopment to make an impact in the digital world.
+          </p>
+        </div>
       </article>
-      <h2>
-        <div className="about_line"></div> technologies
-      </h2>
       <article className="about_techs">
-        {categories.map((category) => (
-          <div key={category} className="about_category">
-            <h3>
-              {category === "front"
-                ? "Front-End"
-                : category === "back"
-                ? "Back-End"
-                : "Others"}
-            </h3>
-            <div key={category} className="about_stack">
-              {techs
-                .filter((tech) => tech.category === category)
-                .map((tech) => (
-                  <figure key={tech.techName}>
-                    {tech.icon ? (
-                      tech.icon
-                    ) : (
-                      <img src={tech.img} alt={tech.techName} />
-                    )}
-                    <figcaption>{tech.techName}</figcaption>
-                  </figure>
-                ))}
+        <h2>
+          <div className="about_line"></div> technologies
+        </h2>
+        <div className="about_categories">
+          {categories.map((category) => (
+            <div key={category} className="about_category">
+              <h3>
+                {category === "front"
+                  ? "Front"
+                  : category === "back"
+                  ? "Back"
+                  : "Others"}
+              </h3>
+              <div key={category} className="about_stack">
+                {techs
+                  .filter((tech) => tech.category === category)
+                  .map((tech) => (
+                    <figure key={tech.techName}>
+                      {tech.icon ? (
+                        tech.icon
+                      ) : (
+                        <img src={tech.img} alt={tech.techName} />
+                      )}
+                      <figcaption>{tech.techName}</figcaption>
+                    </figure>
+                  ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </article>
     </section>
   )

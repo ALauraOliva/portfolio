@@ -1,96 +1,111 @@
 .about_section {
   background-color: $secondaryColor;
   position: relative;
-  height: 100vh;
-  &::after {
-    position: absolute;
-    content: "";
-    z-index: 1;
-    left: 50%;
-    width: 30%;
-    height: 50%;
-    border-radius: 50%;
-    background: inherit;
-    transform: translateX(-50%) translateY(50%);
-    bottom: 0rem;
-  }
-  h1 {
-    display: flex;
-    align-items: center;
-    text-align: start;
-    font-size: 12rem;
-    margin: 0 3rem;
-    padding: 6rem 0;
-    color: $thirdColor;
-  }
-  .about_line {
-    flex-grow: 1;
-    border-top: 3px solid $thirdColor;
-  }
+  height: fit-content;
   .about_content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0 3rem;
     color: $thirdColor;
-    gap: 3rem;
-    p {
-      flex: 1;
-      font-size: 2rem;
-      line-height: 3rem;
-      span {
-        font-weight: 600;
-        font-style: italic;
-      }
-    }
-  }
-  h2 {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    font-size: 8rem;
-    margin: 0 3rem;
-    padding: 2rem 0;
-    color: $thirdColor;
-  }
-  .about_techs {
-    margin: 2rem 3rem;
-    display: flex;
-    height: 30%;
-    @include tablet {
-      flex-direction: column;
-      align-content: space-evenly;
-    }
-    @include mobile {
-      flex-direction: column;
-      align-content: space-evenly;
-    }
-    .about_category {
-      flex: 1 0 0;
-      z-index: 2;
+    height: fit-content;
+    h1 {
       display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      gap: 2rem;
-      box-sizing: border-box;
-      h3 {
-        text-align: center;
-        font-size: 2rem;
-        color: $thirdColor;
+      align-items: center;
+      font-size: 12rem;
+      padding: 6rem 0 0 0;
+      color: $thirdColor;
+      .about_line {
+        flex-grow: 1;
+        border-top: 3px solid $thirdColor;
       }
-      figure {
-        text-align: center;
-        svg,
-        img {
-          width: 5rem;
-          height: 5rem;
+    }
+    .about_row {
+      display: flex;
+      flex-direction: row;
+      gap: 3rem;
+      p {
+        flex: 1;
+        font-size: 2rem;
+        line-height: 3rem;
+        word-spacing: 1rem;
+        word-break: break-all;
+        span {
+          font-weight: 600;
+          font-style: italic;
         }
       }
     }
-    .about_stack {
+  }
+  .about_techs {
+    display: flex;
+    flex-direction: column;
+    margin: 0 3rem;
+    box-sizing: border-box;
+    h2 {
       display: flex;
-      flex-direction: row;
+      align-items: center;
+      font-size: 8rem;
+      margin-bottom: 3rem;
+      color: $thirdColor;
+      .about_line {
+        flex-grow: 1;
+        border-top: 3px solid $thirdColor;
+      }
+    }
+    .about_categories {
+      display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      margin-bottom: 3rem;
+      height: fit-content;
+      gap: 2rem;
+      .about_category {
+        display: flex;
+        flex: 0 0 45rem;
+        border-radius: 6px;
+
+        box-shadow: 5px 5px 9px #f2e8d5, -5px -5px 9px #fcf1de;
+
+        // border-radius: 6px;
+        background: #f2e8d5;
+        // box-shadow: inset 5px 5px 9px #e8dfcc, inset -5px -5px 9px #fcf1de;
+        @include mobile {
+          flex: 0 0 90%;
+          justify-content: flex-start;
+        }
+        z-index: 2;
+        align-items: center;
+
+        h3 {
+          text-align: center;
+          font-size: 1.5rem;
+          color: $thirdColor;
+          transform: rotate(-90deg);
+        }
+        .about_stack {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          width: fit-content;
+
+          figure {
+            text-align: center;
+            height: fit-content;
+            margin: 2.5rem;
+            figcaption {
+              font-weight: 300;
+              font-variant: small-caps;
+            }
+            svg,
+            img {
+              color: $thirdColor;
+              width: 4rem;
+              height: 4rem;
+            }
+          }
+        }
+      }
     }
   }
 }
