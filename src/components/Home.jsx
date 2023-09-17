@@ -11,7 +11,7 @@ export const Home = () => {
       <article className="home_right">
         <div>
           <h1>FULL STACK DEVELOPER</h1>
-          <h2>Transform lines of code into unique web experiences.</h2>
+          <h3>Transform lines of code into unique web experiences.</h3>
           <ul>
             <li>
               <a

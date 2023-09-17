@@ -11,7 +11,6 @@
     h1 {
       display: flex;
       align-items: center;
-      font-size: 12rem;
       padding: 6rem 0 0 0;
       color: $thirdColor;
       .about_line {
@@ -44,7 +43,6 @@
     h2 {
       display: flex;
       align-items: center;
-      font-size: 8rem;
       margin-bottom: 3rem;
       color: $thirdColor;
       .about_line {
@@ -63,14 +61,10 @@
         display: flex;
         flex: 0 0 45rem;
         border-radius: 6px;
-
-        box-shadow: 5px 5px 9px #f2e8d5, -5px -5px 9px #fcf1de;
-
-        // border-radius: 6px;
         background: #f2e8d5;
-        // box-shadow: inset 5px 5px 9px #e8dfcc, inset -5px -5px 9px #fcf1de;
+        box-shadow: inset 5px 5px 9px #e8dfcc, inset -5px -5px 9px #fcf1de;
         @include mobile {
-          flex: 0 0 90%;
+          flex: 0 0 fit-content;
           justify-content: flex-start;
         }
         z-index: 2;

@@ -3,7 +3,7 @@ import React from "react"
 export const Projects = () => {
   return (
     <section id="projects" className="projects_section">
-      Projects
+      <h1>projects</h1>
     </section>
   )
 }

@@ -30,7 +30,7 @@ function App() {
         scrollPosition >= projectsSection.offsetTop &&
         scrollPosition < contactSection.offsetTop
       ) {
-        setColorLinks("#f2e8d5")
+        setColorLinks("#0c3a4d")
       } else {
         setColorLinks("#0c3a4d")
       }
