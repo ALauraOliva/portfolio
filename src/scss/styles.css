@@ -343,49 +343,77 @@ html {
   height: 100vh;
   overflow: hidden;
 }
-.projects_section::before {
+.projects_section .projects_nav {
   position: absolute;
-  content: "";
-  top: -50vh;
-  left: -100vh;
-  width: 200vh;
-  height: 200vh;
-  border-radius: 50%;
+  width: calc(50vw - 0.7rem);
+  height: 100vh;
+  border-radius: 0 50% 50% 0;
   background: #f2e8d5;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 767px) {
-  .projects_section::before {
-    left: -50vw;
-    top: -100vw;
-    width: 200vw;
-    height: 200vw;
+  .projects_section .projects_nav {
+    width: 100vw;
+    height: 100vw;
+    border-radius: 50%;
+    top: -50vw;
+    left: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1299px) {
-  .projects_section::before {
-    left: -50vw;
-    top: -100vw;
-    width: 200vw;
-    height: 200vw;
+  .projects_section .projects_nav {
+    width: 100vw;
+    height: 100vw;
+    top: -55vw;
+    border-radius: 50%;
   }
 }
-.projects_section h1 {
-  position: absolute;
+.projects_section .projects_nav h1 {
+  margin: 0 0 0 3rem;
   color: #0c3a4d;
-  top: calc(50% - 6rem);
 }
 @media screen and (max-width: 767px) {
-  .projects_section h1 {
-    top: calc(25% - 6rem);
+  .projects_section .projects_nav h1 {
+    position: absolute;
+    margin: 0;
     width: 100%;
     text-align: center;
+    top: calc(50% + 10rem);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1299px) {
-  .projects_section h1 {
-    top: calc(25% - 6rem);
+  .projects_section .projects_nav h1 {
+    position: absolute;
+    margin: 0;
     width: 100%;
     text-align: center;
+    top: 70%;
+  }
+}
+.projects_section .projects_spinning {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: spin 10s linear infinite;
+}
+.projects_section .projects_spinning span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform-origin: 0 calc((50vw - 0.7rem) / 2);
+}
+@media screen and (min-width: 768px) and (max-width: 1299px) {
+  .projects_section .projects_spinning span {
+    transform-origin: 0 calc(50vw - 0.7rem);
+  }
+}
+@keyframes spin {
+  0% {
+    tranform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
   }
 }
 
