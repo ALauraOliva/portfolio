@@ -7,20 +7,20 @@
     position: absolute;
     content: "";
     top: -(calc(200vh / 4));
-    left: -100vh;
+    left: -120vh;
     width: 200vh;
     height: 200vh;
     border-radius: 50%;
     background: $secondaryColor;
     @include mobile {
       left: -(calc(200vw / 4));
-      top: -100vw;
+      top: -160vw;
       width: 200vw;
       height: 200vw;
     }
     @include tablet {
       left: -(calc(200vw / 4));
-      top: -100vw;
+      top: -170vw;
       width: 200vw;
       height: 200vw;
     }
@@ -29,15 +29,18 @@
     position: absolute;
     color: $thirdColor;
     top: calc(50% - 6rem);
+    left: 3rem;
     @include mobile {
-      top: calc(25% - 6rem);
+      top: calc(20vw - 6rem);
       width: 100%;
       text-align: center;
+      left: 0rem;
     }
     @include tablet {
-      top: calc(25% - 6rem);
+      top: calc(15vw - 6rem);
       width: 100%;
       text-align: center;
+      left: 0rem;
     }
   }
 }
