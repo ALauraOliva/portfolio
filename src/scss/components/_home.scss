@@ -25,6 +25,30 @@
     background-size: contain;
     opacity: 0.15;
   }
+  .home_spinning {
+    position: absolute;
+    width: 35rem;
+    height: 35rem;
+    animation: spin 50s linear infinite;
+  }
+  .home_spinning span {
+    position: absolute;
+    color: $secondaryColor;
+    font-weight: 500;
+    font-variant: small-caps;
+    font-size: 2.5rem;
+    top: 0;
+    left: 50%;
+    transform-origin: center 17.5rem;
+  }
+  @keyframes spin {
+    0% {
+      tranform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   img {
     z-index: 2;
     width: 25rem;
@@ -34,7 +58,7 @@
     object-position: top;
     border-radius: 50%;
     background: $primaryColor;
-    box-shadow: 11px 11px 14px #d3574c, -11px -11px 14px #ff7162;
+    // box-shadow: 11px 11px 14px #d3574c, -11px -11px 14px #ff7162;
   }
 }
 .home_right {

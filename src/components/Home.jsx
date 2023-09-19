@@ -3,9 +3,24 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
 import { HiDocumentText } from "react-icons/hi2"
 
 export const Home = () => {
+  const phraseLogo = "Andrea Laura | Loving what I do"
+  const deg = 230 / phraseLogo.length
+
   return (
     <section id="home" className="home_section">
       <article className="home_left">
+        <div className="home_spinning">
+          <p>
+            {phraseLogo.split("").map((letter, index) => (
+              <span
+                key={index}
+                style={{ transform: `rotate(${deg * index}deg)` }}
+              >
+                {letter}
+              </span>
+            ))}
+          </p>
+        </div>
         <img src="/src/assets/myPhoto.jpg" alt="photo" />
       </article>
       <article className="home_right">
