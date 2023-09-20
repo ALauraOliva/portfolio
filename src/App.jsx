@@ -2,8 +2,10 @@ import { useState, useEffect } from "react"
 import { Home } from "./components/Home"
 import { About } from "./components/About"
 import { Projects } from "./components/Projects"
+import { Project } from "./components/Project"
 import { Contact } from "./components/Contact"
 import { Nav } from "./components/Nav"
+import projects from "../src/projects/projects"
 
 function App() {
   const [colorLinks, setColorLinks] = useState("#f2e8d5")
@@ -30,7 +32,7 @@ function App() {
         scrollPosition >= projectsSection.offsetTop &&
         scrollPosition < contactSection.offsetTop
       ) {
-        setColorLinks("#0c3a4d")
+        setColorLinks("#f2e8d5")
       } else {
         setColorLinks("#0c3a4d")
       }
@@ -47,10 +49,13 @@ function App() {
   return (
     <main id="scroller" className="app_main">
       <Nav colorLinks={colorLinks} />
-      <Home id="home" />
-      <About id="about" />
-      <Projects id="projects" />
-      <Contact id="contact" />
+      <Home />
+      <About />
+      <Projects />
+      {projects.map((project) => (
+        <Project project={project} />
+      ))}
+      <Contact />
     </main>
   )
 }
