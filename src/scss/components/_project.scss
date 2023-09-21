@@ -1,9 +1,81 @@
 .project_section {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .project_slides {
+    display: flex;
+    height: inherit;
+    width: 200%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    input {
+      display: none;
+    }
+    .project_slide {
+      width: 100%;
+      transition: 0.6s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        text-align: center;
+        width: 80%;
+      }
+      .project_content {
+        width: 80%;
+      }
+    }
+    /*Project 1 GreenLand*/
+    #project_GreenLand1:checked ~ .slide_checked {
+      margin-left: 0;
+    }
+    #project_GreenLand2:checked ~ .slide_checked {
+      margin-left: -100%;
+    }
+    /*Project 2 Rick And Morty*/
+    #project_Rick_and_Morty1:checked ~ .slide_checked {
+      margin-left: 0;
+    }
+    #project_Rick_and_Morty2:checked ~ .slide_checked {
+      margin-left: -100%;
+    }
+    /*Project 3 Pokedex*/
+    #project_Pokedex1:checked ~ .slide_checked {
+      margin-left: 0;
+    }
+    #project_Pokedex2:checked ~ .slide_checked {
+      margin-left: -100%;
+    }
+    /*Project 4 Portfolio*/
+    #project_Portfolio1:checked ~ .slide_checked {
+      margin-left: 0;
+    }
+    #project_Portfolio2:checked ~ .slide_checked {
+      margin-left: -100%;
+    }
+  }
+  .project_navigation {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    .bar {
+      width: 7rem;
+      height: 1.7rem;
+      border: 0.2rem solid $secondaryColor;
+      margin: 0.6rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: 0.6s;
+      &:hover {
+        background-color: $secondaryColor;
+      }
+    }
+  }
 }
 
 .project_GreenLand {
