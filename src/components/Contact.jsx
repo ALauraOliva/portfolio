@@ -1,8 +1,9 @@
-import React, { useRef } from "react"
+import React, { useRef, useState } from "react"
 import emailjs from "@emailjs/browser"
 
 export const Contact = () => {
   const form = useRef()
+  const [popupMessage, setPopupMessage] = useState(null)
 
   const sendEmail = (e) => {
     e.preventDefault()
@@ -15,13 +16,20 @@ export const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text)
           e.target.reset()
+          setPopupMessage("Thanks for your message")
         },
         (error) => {
           console.log(error.text)
+          setPopupMessage(
+            "Problemas al enviar el mensaje. Inténtalo de nuevo más tarde."
+          )
         }
       )
+  }
+
+  const closePopup = () => {
+    setPopupMessage(null)
   }
 
   return (
@@ -48,6 +56,17 @@ export const Contact = () => {
         </div>
         <button type="submit">SUBMIT</button>
       </form>
+
+      {popupMessage && (
+        <div className="popup">
+          <div className="popup-content">
+            <span className="close" onClick={closePopup}>
+              &times;
+            </span>
+            <p>{popupMessage}</p>
+          </div>
+        </div>
+      )}
     </section>
   )
 }
