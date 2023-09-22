@@ -22,13 +22,12 @@
     .about_row {
       display: flex;
       flex-direction: row;
-      gap: 3rem;
+      gap: 5rem;
       p {
         flex: 1;
         font-size: 2rem;
         line-height: 3rem;
         word-spacing: 1rem;
-        word-break: break-all;
         span {
           font-weight: 600;
           font-style: italic;
