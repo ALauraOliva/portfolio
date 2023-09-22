@@ -14,6 +14,7 @@ import { AiFillCode } from "react-icons/ai"
 import { DiScrum } from "react-icons/di"
 import { AiFillGithub } from "react-icons/ai"
 import { BsSlack } from "react-icons/bs"
+import { PiAppWindowFill } from "react-icons/pi"
 
 const techs = [
   { techName: "Sass", icon: <BiLogoSass />, category: "front" },
@@ -39,7 +40,7 @@ const techs = [
   { techName: "Scrum", icon: <DiScrum />, category: "other" },
   { techName: "Git", icon: <AiFillGithub />, category: "other" },
   { techName: "Slack", icon: <BsSlack />, category: "other" },
-  { techName: "Genexus", img: "src/assets/genexusIcon.png", category: "other" },
+  { techName: "Genexus", icon: <PiAppWindowFill />, category: "other" },
 ]
 export const About = () => {
   const categories = ["front", "back", "other"]
@@ -85,11 +86,7 @@ export const About = () => {
                   .filter((tech) => tech.category === category)
                   .map((tech) => (
                     <figure key={tech.techName}>
-                      {tech.icon ? (
-                        tech.icon
-                      ) : (
-                        <img src={tech.img} alt={tech.techName} />
-                      )}
+                      {tech.icon}
                       <figcaption>{tech.techName}</figcaption>
                     </figure>
                   ))}

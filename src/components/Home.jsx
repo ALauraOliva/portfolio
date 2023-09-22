@@ -3,8 +3,8 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
 import { HiDocumentText } from "react-icons/hi2"
 
 export const Home = () => {
-  const phraseLogo = "Andrea Laura | Loving what I do"
-  const deg = 230 / phraseLogo.length
+  const phraseLogo = "andrea laura | andrea laura |"
+  const deg = 360 / phraseLogo.length
 
   return (
     <section id="home" className="home_section">
@@ -21,12 +21,12 @@ export const Home = () => {
             ))}
           </p>
         </div>
-        <img src="/src/assets/myPhoto.jpg" alt="photo" />
+        <img src="/src/assets/myPhoto.webp" alt="photo" />
       </article>
       <article className="home_right">
         <div>
           <h1>FULL STACK DEVELOPER</h1>
-          <h3>Transform lines of code into unique web experiences.</h3>
+          <h2>Transform lines of code into unique web experiences.</h2>
           <ul>
             <li>
               <a
@@ -50,7 +50,7 @@ export const Home = () => {
             </li>
             <li>
               <a
-                href="https://github.com/ALauraOliva"
+                href="/src/assets/Docs/Andrea_Laura_Eng.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
