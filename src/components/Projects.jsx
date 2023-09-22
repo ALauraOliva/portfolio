@@ -7,9 +7,11 @@ export const Projects = () => {
       <h1>projects</h1>
       <ul>
         {projects.map((project) => (
-          <a href={`#${project.name}`} key={project.name}>
-            {project.name}
-          </a>
+          <li>
+            <a href={`#${project.name}`} key={project.name}>
+              {project.name}
+            </a>
+          </li>
         ))}
       </ul>
     </section>

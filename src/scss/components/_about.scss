@@ -1,7 +1,8 @@
 .about_section {
   background-color: $secondaryColor;
   position: relative;
-  height: fit-content;
+  height: 100vh;
+
   .about_content {
     display: flex;
     flex-direction: column;

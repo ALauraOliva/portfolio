@@ -12,6 +12,7 @@ export const Project = ({ project }) => {
           name="radio"
           id={`project_${project.name.replace(/\s+/g, "_")}1`}
           checked
+          readOnly
         />
         <input
           type="radio"
@@ -26,14 +27,14 @@ export const Project = ({ project }) => {
             <div className="project_subContent">
               <h2>Role</h2>
               <div className="project_roles">
-                {project.role.map((role) => (
-                  <span>{role}</span>
+                {project.role.map((role, index) => (
+                  <span key={index}>{role}</span>
                 ))}
               </div>
               <h2>Tech Stack</h2>
               <div className="project_techs">
-                {project.tech.map((tech) => (
-                  <span>{tech}</span>
+                {project.tech.map((tech, index) => (
+                  <span key={index}>{tech}</span>
                 ))}
               </div>
             </div>
@@ -46,14 +47,14 @@ export const Project = ({ project }) => {
             <div className="project_subContent">
               <h2>Role</h2>
               <div className="project_roles">
-                {project.role.map((role) => (
-                  <span>{role}</span>
+                {project.role.map((role, index) => (
+                  <span key={index}>{role}</span>
                 ))}
               </div>
               <h2>Tech Stack</h2>
               <div className="project_techs">
-                {project.tech.map((tech) => (
-                  <span>{tech}</span>
+                {project.tech.map((tech, index) => (
+                  <span key={index}>{tech}</span>
                 ))}
               </div>
             </div>
@@ -64,11 +65,11 @@ export const Project = ({ project }) => {
       <div className="project_navigation">
         <label
           className="bar"
-          for={`project_${project.name.replace(/\s+/g, "_")}1`}
+          htmlFor={`project_${project.name.replace(/\s+/g, "_")}1`}
         ></label>
         <label
           className="bar"
-          for={`project_${project.name.replace(/\s+/g, "_")}2`}
+          htmlFor={`project_${project.name.replace(/\s+/g, "_")}2`}
         ></label>
       </div>
     </section>
