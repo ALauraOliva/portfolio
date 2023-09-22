@@ -7,10 +7,8 @@ export const Projects = () => {
       <h1>projects</h1>
       <ul>
         {projects.map((project) => (
-          <li>
-            <a href={`#${project.name}`} key={project.name}>
-              {project.name}
-            </a>
+          <li key={project.name}>
+            <a href={`#${project.name}`}>{project.name}</a>
           </li>
         ))}
       </ul>
