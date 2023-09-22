@@ -22,16 +22,43 @@ export const Project = ({ project }) => {
         <article className="project_slide slide_checked">
           <h1>{project.name}</h1>
           <div className="project_content">
-            <p>{project.resume}</p>
+            <p className="project_resume">{project.resume}</p>
             <div className="project_subContent">
               <h2>Role</h2>
-              {project.role}
+              <div className="project_roles">
+                {project.role.map((role) => (
+                  <span>{role}</span>
+                ))}
+              </div>
               <h2>Tech Stack</h2>
-              {project.tech}
+              <div className="project_techs">
+                {project.tech.map((tech) => (
+                  <span>{tech}</span>
+                ))}
+              </div>
             </div>
           </div>
         </article>
-        <article className="project_slide">blah</article>
+        <article className="project_slide">
+          <h1>{project.name}</h1>
+          <div className="project_content">
+            <p className="project_resume">{project.resume}</p>
+            <div className="project_subContent">
+              <h2>Role</h2>
+              <div className="project_roles">
+                {project.role.map((role) => (
+                  <span>{role}</span>
+                ))}
+              </div>
+              <h2>Tech Stack</h2>
+              <div className="project_techs">
+                {project.tech.map((tech) => (
+                  <span>{tech}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </article>
       </div>
 
       <div className="project_navigation">
