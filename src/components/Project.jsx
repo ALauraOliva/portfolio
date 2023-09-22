@@ -23,8 +23,14 @@ export const Project = ({ project }) => {
         <article className="project_slide slide_checked">
           <h1>{project.name}</h1>
           <div className="project_content">
-            <p className="project_resume">{project.resume}</p>
+            <p className="project_resume">
+              {project.resume}
+              <br />
+              <br />
+              <span>{project.resume_part2}</span>
+            </p>
             <div className="project_subContent">
+              <span>{project.date}</span>
               <h2>Role</h2>
               <div className="project_roles">
                 {project.role.map((role, index) => (
