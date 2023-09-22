@@ -1,5 +1,70 @@
 .contact_section {
   background-color: $secondaryColor;
-  position: relative;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    width: 90%;
+    text-align: center;
+    line-height: 9rem;
+    margin-bottom: 6rem;
+    color: $thirdColor;
+    font-size: 12rem;
+  }
+  form {
+    width: 50%;
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .contact_inputGroup {
+        flex-basis: 49%;
+      }
+    }
+    .contact_inputGroup {
+      position: relative;
+      margin-bottom: 4rem;
+      input,
+      textarea {
+        width: 100%;
+        padding: 1rem;
+        outline: 0;
+        border: none;
+        box-shadow: inset 5px 5px 9px #e8dfcc, inset -5px -5px 9px #fcf1de;
+        color: $thirdColor;
+        background: transparent;
+        font-size: 1.5rem;
+        box-sizing: border-box;
+        &:focus ~ label,
+        &:valid ~ label {
+          top: -3rem;
+          font-size: 1.4rem;
+        }
+      }
+      label {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 1rem;
+        color: $thirdColor;
+        font-variant: small-caps;
+        cursor: text;
+        font-size: 1.5rem;
+        transition: 0.2s;
+        font-weight: 600;
+      }
+    }
+    button {
+      padding: 1rem 0;
+      color: $secondaryColor;
+      background-color: $thirdColor;
+      border: none;
+      border-radius: 1.5rem;
+      outline: none;
+      width: 100%;
+      cursor: pointer;
+    }
+  }
 }
