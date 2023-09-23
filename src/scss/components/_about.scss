@@ -2,27 +2,45 @@
   background-color: $secondaryColor;
   position: relative;
   height: 100vh;
-
-  .about_content {
+  display: flex;
+  .about_title {
+    flex: auto;
     display: flex;
-    flex-direction: column;
-    margin: 0 3rem;
-    color: $thirdColor;
-    height: fit-content;
+    justify-items: center;
+    align-items: center;
+    height: inherit;
+    width: fit-content;
+
     h1 {
-      display: flex;
-      align-items: center;
-      padding: 6rem 0 0 0;
+      width: min-content;
+      margin: 0;
+      line-height: 8.5rem;
+      text-align: center;
       color: $thirdColor;
-      .about_line {
-        flex-grow: 1;
-        border-top: 3px solid $thirdColor;
-      }
+      transform: rotate(-90deg);
     }
-    .about_row {
+  }
+  .about_info {
+    background: #f2e8d5;
+    box-shadow: inset 11px 11px 12px #e6dcca, inset -11px -11px 12px #fef4e0;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 0 3rem 0 3rem;
+    /* WebKit (Chrome, Safari) */
+    &::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+    .about_resume {
       display: flex;
       flex-direction: row;
       gap: 5rem;
+      margin: 7rem 0 2rem 0;
+      @include mobile {
+        flex-direction: column;
+        margin: 9rem 0 4rem 0;
+      }
       p {
         flex: 1;
         font-size: 2rem;
@@ -34,42 +52,45 @@
         }
       }
     }
-  }
-  .about_techs {
-    display: flex;
-    flex-direction: column;
-    margin: 0 3rem;
-    box-sizing: border-box;
-    h2 {
+    .title_content {
       display: flex;
+      justify-content: center;
       align-items: center;
-      margin-bottom: 3rem;
-      color: $thirdColor;
+      width: 100%;
+      margin: 4rem 0;
+      h2 {
+        color: $thirdColor;
+        font-size: 5rem;
+        font-variant: small-caps;
+        width: fit-content;
+        @include mobile {
+          font-size: 3.5rem;
+          width: min-content;
+          line-height: 2.2rem;
+        }
+      }
       .about_line {
         flex-grow: 1;
-        border-top: 3px solid $thirdColor;
+        border-radius: 2px;
+        border-top: 0.4rem solid $thirdColor;
       }
     }
     .about_categories {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 3rem;
       height: fit-content;
       gap: 2rem;
+      @include mobile {
+        flex-direction: column;
+      }
+      @include tablet {
+        flex-direction: column;
+      }
       .about_category {
         display: flex;
-        flex: 0 0 45rem;
+        flex: 1;
         border-radius: 6px;
-        background: #f2e8d5;
         box-shadow: inset 5px 5px 9px #e8dfcc, inset -5px -5px 9px #fcf1de;
-        @include mobile {
-          flex: 0 0 fit-content;
-          justify-content: flex-start;
-        }
-        z-index: 2;
         align-items: center;
-
         h3 {
           text-align: center;
           font-size: 1.5rem;
@@ -77,26 +98,48 @@
           transform: rotate(-90deg);
         }
         .about_stack {
+          flex: 1;
           display: flex;
-          flex-direction: row;
           flex-wrap: wrap;
-          justify-content: center;
-          width: fit-content;
-
           figure {
-            text-align: center;
+            margin: 0;
+            padding: 0;
+            flex: 1;
             height: fit-content;
-            margin: 2.5rem;
+            display: flex;
+            justify-content: center;
             figcaption {
-              font-weight: 300;
-              font-variant: small-caps;
+              margin: 1rem 1rem;
             }
-            svg,
-            img {
-              color: $thirdColor;
-              width: 4rem;
-              height: 4rem;
-            }
+          }
+        }
+      }
+    }
+    .timeline_cont {
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0 0 15%;
+      box-sizing: border-box;
+      section {
+        border-left: 0.5rem solid $thirdColor;
+        padding: 0 5rem 0 5rem;
+        box-sizing: border-box;
+        .line {
+          position: relative;
+          margin: 3rem 0 8rem 0;
+          width: 100%;
+          img {
+            position: absolute;
+            top: 0;
+            left: -8rem;
+            width: 4rem;
+            height: 4rem;
+            background-color: $thirdColor;
+            border-radius: 50%;
+            padding: 1rem;
           }
         }
       }

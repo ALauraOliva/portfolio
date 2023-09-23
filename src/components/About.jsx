@@ -1,56 +1,15 @@
 import React from "react"
-import { BiLogoSass } from "react-icons/bi"
-import { BiLogoJavascript } from "react-icons/bi"
-import { AiFillHtml5 } from "react-icons/ai"
-import { SiCss3 } from "react-icons/si"
-import { BiLogoReact } from "react-icons/bi"
-import { BiLogoRedux } from "react-icons/bi"
-import { BiLogoNodejs } from "react-icons/bi"
-import { SiExpress } from "react-icons/si"
-import { FaDatabase } from "react-icons/fa"
-import { SiMysql } from "react-icons/si"
-import { BiLogoPostgresql } from "react-icons/bi"
-import { AiFillCode } from "react-icons/ai"
-import { DiScrum } from "react-icons/di"
-import { AiFillGithub } from "react-icons/ai"
-import { BsSlack } from "react-icons/bs"
-import { PiAppWindowFill } from "react-icons/pi"
+import techs from "../projects/techs"
 
-const techs = [
-  { techName: "Sass", icon: <BiLogoSass />, category: "front" },
-  {
-    techName: "JavaScript",
-    icon: <BiLogoJavascript />,
-    category: "front",
-  },
-  { techName: "HTML", icon: <AiFillHtml5 />, category: "front" },
-  { techName: "CSS", icon: <SiCss3 />, category: "front" },
-  { techName: "React", icon: <BiLogoReact />, category: "front" },
-  { techName: "Redux", icon: <BiLogoRedux />, category: "front" },
-  { techName: "Node js", icon: <BiLogoNodejs />, category: "back" },
-  { techName: "Express", icon: <SiExpress />, category: "back" },
-  { techName: "SQL", icon: <FaDatabase />, category: "back" },
-  { techName: "MySQL", icon: <SiMysql />, category: "back" },
-  {
-    techName: "PostgreSQL",
-    icon: <BiLogoPostgresql />,
-    category: "back",
-  },
-  { techName: "AS400", icon: <AiFillCode />, category: "back" },
-  { techName: "Scrum", icon: <DiScrum />, category: "other" },
-  { techName: "Git", icon: <AiFillGithub />, category: "other" },
-  { techName: "Slack", icon: <BsSlack />, category: "other" },
-  { techName: "Genexus", icon: <PiAppWindowFill />, category: "other" },
-]
 export const About = () => {
   const categories = ["front", "back", "other"]
   return (
     <section id="about" className="about_section">
-      <article className="about_content">
-        <h1>
-          about me <div className="about_line"></div>
-        </h1>
-        <div className="about_row">
+      <div className="about_title">
+        <h1>about ME</h1>
+      </div>
+      <article className="about_info">
+        <div className="about_resume">
           <p>
             Graduated in <span>Systems Engineering</span>, in search of exciting
             challenges in the field of Full Stack development, with a particular
@@ -66,11 +25,10 @@ export const About = () => {
             passion for delevopment to make an impact in the digital world.
           </p>
         </div>
-      </article>
-      <article className="about_techs">
-        <h2>
-          <div className="about_line"></div> technologies
-        </h2>
+        <div className="title_content">
+          <div className="about_line"></div>
+          <h2>TECHnologies</h2>
+        </div>
         <div className="about_categories">
           {categories.map((category) => (
             <div key={category} className="about_category">
@@ -86,13 +44,67 @@ export const About = () => {
                   .filter((tech) => tech.category === category)
                   .map((tech) => (
                     <figure key={tech.techName}>
-                      {tech.icon}
                       <figcaption>{tech.techName}</figcaption>
                     </figure>
                   ))}
               </div>
             </div>
           ))}
+        </div>
+        <div className="title_content">
+          <h2>STUDIES & experiencie</h2>
+          <div className="about_line"></div>
+        </div>
+        <div className="timeline_cont">
+          <section>
+            <div className="line">
+              <img src="/src/assets/svg/graduateIcon.svg" alt="graduateIcon" />
+              <div className="details">
+                <span>2023</span>
+                <h3>Full Stack Developer / soyHenry Bootcamp</h3>
+              </div>
+              <p>
+                curse el bootcamp de henry donde aprendi tal y tech1 tehc2
+                jsjssks otro.
+              </p>
+            </div>
+            <div className="line">
+              <img src="/src/assets/svg/workIcon.svg" alt="workIcon" />
+              <div className="details">
+                <span>2022</span>
+                <h3>Incalpaca</h3>
+              </div>
+              <p>
+                curse el bootcamp de henry donde aprendi tal y tech1 tehc2
+                jsjssks otro.
+              </p>
+            </div>
+            <div className="line">
+              <img src="/src/assets/svg/workIcon.svg" alt="workIcon" />
+              <div className="details">
+                <span>2021</span>
+                <h3>BANTOTAL</h3>
+              </div>
+              <p>
+                curse el bootcamp de henry donde aprendi tal y tech1 tehc2
+                jsjssks otro.
+              </p>
+            </div>
+            <div className="line">
+              <img src="/src/assets/svg/graduateIcon.svg" alt="graduateIcon" />
+              <div className="details">
+                <span>2017 - 2021</span>
+                <h3>
+                  Bachiller en Ing. de sistemas / Universidad Catolica de Santa
+                  Maria
+                </h3>
+              </div>
+              <p>
+                curse el bootcamp de henry donde aprendi tal y tech1 tehc2
+                jsjssks otro.
+              </p>
+            </div>
+          </section>
         </div>
       </article>
     </section>
