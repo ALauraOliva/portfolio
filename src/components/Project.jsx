@@ -18,6 +18,7 @@ export const Project = ({ project }) => {
           type="radio"
           name="radio"
           id={`project_${project.name.replace(/\s+/g, "_")}2`}
+          readOnly
         />
 
         <article className="project_slide slide_checked">
