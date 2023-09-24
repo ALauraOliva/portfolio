@@ -1,5 +1,6 @@
 import React from "react"
 import techs from "../projects/techs"
+import timeLine from "../projects/education_details"
 
 export const About = () => {
   const categories = ["front", "back", "other"]
@@ -57,71 +58,16 @@ export const About = () => {
         </div>
         <div className="timeline_cont">
           <section>
-            <div className="line">
-              <img src="/src/assets/svg/graduateIcon.svg" alt="graduateIcon" />
-              <div className="details">
-                <span>2023</span>
-                <h3>Full Stack Developer | soyHenry Bootcamp</h3>
+            {timeLine?.map((exp) => (
+              <div className="line">
+                <img src={exp.img} alt={exp.alt} />
+                <div className="details">
+                  <span>{exp.year}</span>
+                  <h3>{exp.title}</h3>
+                </div>
+                <p>{exp.description}</p>
               </div>
-              <p>
-                Participé en un bootcamp de desarrollo web donde adquirí
-                habilidades para convertirme en un desarrollador Full Stack.
-                Durante el programa, completé cuatro proyectos integrales que
-                abarcaron tanto el desarrollo front-end como el back-end.
-                Además, gané valiosa experiencia colaborando en proyectos
-                grupales utilizando la metodología Scrum para la gestión de
-                equipos ágiles. También tuve la oportunidad de destacarme al
-                ganar varios concursos relacionados con el desarrollo web.
-              </p>
-            </div>
-            <div className="line">
-              <img src="/src/assets/svg/workIcon.svg" alt="workIcon" />
-              <div className="details">
-                <span>2022</span>
-                <h3>Development Analyst | Incalpaca</h3>
-              </div>
-              <p>
-                Desarrollé programas en Genexus según los requisitos
-                empresariales, utilizando MySQL para consultas diarias a la base
-                de datos y la integración de resultados en soluciones eficaces.
-                Mejoré funcionalidades en programas existentes para satisfacer
-                las demandas comerciales y optimizar el rendimiento en
-                producción. Diseñé pruebas exhaustivas para validar el correcto
-                funcionamiento de programas nuevos y existentes en producción,
-                garantizando su eficacia
-              </p>
-            </div>
-            <div className="line">
-              <img src="/src/assets/svg/workIcon.svg" alt="workIcon" />
-              <div className="details">
-                <span>2021</span>
-                <h3>Analyst Programmer | De Larrobla & Asociados (DL&A) </h3>
-              </div>
-              <p>
-                Desarrollé programas utilizando GeneXus, automatizando el
-                intercambio de datos a través de SOAPUI, mejorando
-                funcionalidades y rendimiento en programas existentes, y
-                empleando AS400 para consultas a bases de datos. Además, he
-                proporcionado documentación detallada de procesos y mejoras.En
-                un entorno de desarrollo de software para entidades financieras,
-                donde trabajé siguiendo la metodología Scrum y colaboré con
-                equipos internacionales de diferentes países.
-              </p>
-            </div>
-            <div className="line">
-              <img src="/src/assets/svg/graduateIcon.svg" alt="graduateIcon" />
-              <div className="details">
-                <span>2017 - 2021</span>
-                <h3>
-                  Bachiller en Ingenieria de sistemas | Universidad Catolica de
-                  Santa Maria
-                </h3>
-              </div>
-              <p>
-                Obtuve mi formación académica en la Universidad Católica de
-                Santa María, donde me gradué en Ingeniería de Sistemas.
-              </p>
-            </div>
+            ))}
           </section>
         </div>
       </article>
