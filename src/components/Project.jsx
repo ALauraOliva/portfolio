@@ -29,6 +29,32 @@ export const Project = ({ project }) => {
               <br />
               <br />
               <span>{project.resume_part2}</span>
+              <ul>
+                <li>
+                  <a
+                    href={project.deployLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/src/assets/svg/rocketIcon.svg"
+                      alt="go_to_deploy"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/src/assets/svg/githubIcon.svg"
+                      alt="go_to_repository"
+                    />
+                  </a>
+                </li>
+              </ul>
             </p>
             <div className="project_subContent">
               <span>{project.date}</span>
@@ -50,7 +76,7 @@ export const Project = ({ project }) => {
         <article className="project_slide">
           <h1>{project.name}</h1>
           <div className="project_content">
-            <p className="project_resume">{project.resume}</p>
+            <p className="project_resume">{project.resume} </p>
             <div className="project_subContent">
               <h2>Role</h2>
               <div className="project_roles">

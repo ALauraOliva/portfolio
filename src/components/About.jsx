@@ -28,7 +28,7 @@ export const About = () => {
         </div>
         <div className="title_content">
           <div className="about_line"></div>
-          <h2>TECHnologies</h2>
+          <h2>Technologies</h2>
         </div>
         <div className="about_categories">
           {categories.map((category) => (
@@ -53,7 +53,7 @@ export const About = () => {
           ))}
         </div>
         <div className="title_content">
-          <h2>STUDIES & experiencie</h2>
+          <h2>Studies & Experience</h2>
           <div className="about_line"></div>
         </div>
         <div className="timeline_cont">

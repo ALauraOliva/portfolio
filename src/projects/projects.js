@@ -3,6 +3,8 @@ const projects = [
     name: "GreenLand",
     date: "September - 2023",
     role: ["Front - End"],
+    githubLink: "https://github.com/ALauraOliva/GreenLand",
+    deployLink: "https://greenland-client.vercel.app/",
     tech: [
       "React",
       "Vite",
@@ -27,6 +29,8 @@ const projects = [
     name: "Portfolio",
     date: "September - 2023",
     role: ["Front - End"],
+    githubLink: "https://github.com/ALauraOliva/portfolio",
+    deployLink: "https://github.com/ALauraOliva/portfolio",
     tech: ["React", "SASS", "CSS", "HTML", "JavaScript", "Vite", "email.js"],
     resume:
       "My portfolio is a reflection of my personality, skills, and creative perspective. It showcases my notable projects and demonstrates a commitment to using pure CSS for everything, including notifications, popups, animations, and more. Throughout its development, I adhered to the best practices to deliver a product with optimal performance and presentation.",
@@ -37,6 +41,8 @@ const projects = [
     name: "Rick and Morty",
     date: "June - 2023",
     role: ["Front - End", "Back - End"],
+    githubLink: "https://github.com/ALauraOliva/Rick-and-Morty",
+    deployLink: "https://rick-and-morty-appp.netlify.app/",
     tech: [
       "React",
       "CSS",
@@ -58,6 +64,8 @@ const projects = [
     name: "Pokedex",
     date: "June - 2023",
     role: ["Front - End", "Back - End"],
+    githubLink: "https://github.com/ALauraOliva/Pokemon_App",
+    deployLink: "https://pokedexappplication.netlify.app/",
     tech: [
       "React",
       "CSS",

@@ -13,8 +13,10 @@ const techs = [
   { techName: "AS400", category: "back" },
   { techName: "Scrum", category: "other" },
   { techName: "Git", category: "other" },
+  { techName: "Github", category: "other" },
   { techName: "Slack", category: "other" },
   { techName: "Genexus", category: "other" },
+  { techName: "SOAPUI", category: "other" },
 ]
 
 export default techs

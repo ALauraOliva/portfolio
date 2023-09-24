@@ -43,9 +43,8 @@
       }
       p {
         flex: 1;
-        font-size: 2rem;
+        font-size: 1.5rem;
         line-height: 3rem;
-        word-spacing: 1rem;
         span {
           font-weight: 600;
           font-style: italic;
@@ -57,7 +56,7 @@
       justify-content: center;
       align-items: center;
       width: 100%;
-      margin: 4rem 0;
+      margin: 4rem 0 3rem 0;
       h2 {
         color: $thirdColor;
         font-size: 5rem;
@@ -125,12 +124,15 @@
       box-sizing: border-box;
       @include mobile {
         margin: 0 0 0 10%;
-        padding: 3rem 3rem 3rem 0;
+        padding: 1rem 3rem 3rem 0;
       }
       section {
         border-left: 0.5rem solid $thirdColor;
         padding: 0 5rem 0 5rem;
         @include mobile {
+          padding: 0 0 0 5rem;
+        }
+        @include tablet {
           padding: 0 0 0 5rem;
         }
         box-sizing: border-box;
@@ -141,13 +143,14 @@
           .details {
             span,
             h3 {
-              font-size: 1.5rem;
+              font-size: 2rem;
+              font-variant: small-caps;
             }
           }
           p {
             margin-top: 2rem;
-            line-height: 2.3rem;
-            font-size: 1.4rem;
+            font-size: 1.5rem;
+            line-height: 3rem;
           }
           img {
             position: absolute;
