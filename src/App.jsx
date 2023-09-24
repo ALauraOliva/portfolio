@@ -1,6 +1,7 @@
+import React from "react"
 import { useState, useEffect } from "react"
 import { Home } from "./components/Home"
-import { About } from "./components/About"
+const About = React.lazy(() => import("./components/About"))
 import { Projects } from "./components/Projects"
 import { Project } from "./components/Project"
 import { Contact } from "./components/Contact"

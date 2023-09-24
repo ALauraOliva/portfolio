@@ -24,7 +24,7 @@ export const Project = ({ project }) => {
         <article className="project_slide slide_checked">
           <h1>{project.name}</h1>
           <div className="project_content">
-            <p className="project_resume">
+            <div className="project_resume">
               {project.resume}
               <br />
               <br />
@@ -57,7 +57,7 @@ export const Project = ({ project }) => {
                   <tool-tip role="tooltip">Repository</tool-tip>
                 </li>
               </ul>
-            </p>
+            </div>
             <div className="project_subContent">
               <span>{project.date}</span>
               <h2>Role</h2>

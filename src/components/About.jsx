@@ -1,8 +1,9 @@
 import React from "react"
 import techs from "../projects/techs"
 import timeLine from "../projects/education_details"
+import { LazyLoadImage } from "react-lazy-load-image-component"
 
-export const About = () => {
+const About = () => {
   const categories = ["front", "back", "other"]
   return (
     <section id="about" className="about_section">
@@ -45,6 +46,11 @@ export const About = () => {
                   .filter((tech) => tech.category === category)
                   .map((tech) => (
                     <figure key={tech.techName}>
+                      <LazyLoadImage
+                        src={tech.icon}
+                        placeholderSrc="/src/assets/svg/placeholder.svg"
+                        alt={tech.techName}
+                      />
                       <figcaption>{tech.techName}</figcaption>
                     </figure>
                   ))}
@@ -58,8 +64,8 @@ export const About = () => {
         </div>
         <div className="timeline_cont">
           <section>
-            {timeLine?.map((exp) => (
-              <div className="line">
+            {timeLine?.map((exp, index) => (
+              <div className="line" key={index}>
                 <img src={exp.img} alt={exp.alt} />
                 <div className="details">
                   <span>{exp.year}</span>
@@ -74,3 +80,5 @@ export const About = () => {
     </section>
   )
 }
+
+export default About
