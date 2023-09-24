@@ -41,6 +41,7 @@ export const Project = ({ project }) => {
                       alt="go_to_deploy"
                     />
                   </a>
+                  <tool-tip role="tooltip">Deploy</tool-tip>
                 </li>
                 <li>
                   <a
@@ -53,6 +54,7 @@ export const Project = ({ project }) => {
                       alt="go_to_repository"
                     />
                   </a>
+                  <tool-tip role="tooltip">Repository</tool-tip>
                 </li>
               </ul>
             </p>

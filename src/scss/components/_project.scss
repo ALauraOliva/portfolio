@@ -51,6 +51,8 @@
             padding: 0;
             li {
               margin-right: 2rem;
+              width: 6rem;
+              height: 6rem;
               a {
                 display: flex;
                 padding: 1rem;
@@ -66,6 +68,30 @@
                 }
               }
             }
+          }
+          tool-tip {
+            position: absolute;
+            z-index: 1;
+            pointer-events: none;
+            user-select: none;
+            padding: 0.5rem 1rem;
+            font-size: 1.5rem;
+            color: #2f2f2f;
+            border-radius: 8px;
+            top: 100%;
+            margin: 1rem 0 0 0;
+            left: 0%;
+            width: 7rem;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+          }
+
+          :has(> tool-tip) {
+            position: relative;
+          }
+          :has(> tool-tip):hover tool-tip {
+            opacity: 1;
           }
         }
         .project_subContent {
@@ -167,6 +193,9 @@
   a {
     background-color: $greenLandh1;
   }
+  tool-tip {
+    background-color: $greenLandh1;
+  }
 }
 
 .project_Rick_and_Morty {
@@ -175,6 +204,9 @@
     color: $Rick_and_Mortyh1;
   }
   a {
+    background-color: $Rick_and_Mortyh1;
+  }
+  tool-tip {
     background-color: $Rick_and_Mortyh1;
   }
 }
@@ -187,6 +219,9 @@
   a {
     background-color: $Pokedexh1;
   }
+  tool-tip {
+    background-color: $Pokedexh1;
+  }
 }
 
 .project_Portfolio {
@@ -195,6 +230,9 @@
     color: $secondaryColor;
   }
   a {
+    background-color: $secondaryColor;
+  }
+  tool-tip {
     background-color: $secondaryColor;
   }
 }
