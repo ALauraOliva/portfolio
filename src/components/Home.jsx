@@ -3,7 +3,7 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
 import { HiDocumentText } from "react-icons/hi2"
 import { LazyLoadImage } from "react-lazy-load-image-component"
 
-export const Home = () => {
+const Home = () => {
   const phraseLogo = "andrea laura | andrea laura |"
   const deg = 360 / phraseLogo.length
 
@@ -22,11 +22,7 @@ export const Home = () => {
             ))}
           </p>
         </div>
-        <LazyLoadImage
-          src="/src/assets/myPhoto.webp"
-          placeholderSrc="/src/assets/myPhotoBlur.webp"
-          alt="photo"
-        />
+        <LazyLoadImage src="/src/assets/myPhoto.webp" alt="photo" />
       </article>
       <article className="home_right">
         <div>
@@ -69,3 +65,5 @@ export const Home = () => {
     </section>
   )
 }
+
+export default Home

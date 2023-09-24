@@ -1,6 +1,6 @@
 import React from "react"
 
-export const Project = ({ project }) => {
+const Project = ({ project }) => {
   return (
     <section
       id={project.name}
@@ -110,3 +110,5 @@ export const Project = ({ project }) => {
     </section>
   )
 }
+
+export default Project

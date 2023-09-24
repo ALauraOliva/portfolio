@@ -1,7 +1,7 @@
 import React from "react"
 import projects from "../projects/projects"
 
-export const Projects = () => {
+const Projects = () => {
   return (
     <section id="projects" className="projects_section">
       <h1>projects</h1>
@@ -15,3 +15,5 @@ export const Projects = () => {
     </section>
   )
 }
+
+export default Projects

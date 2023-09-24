@@ -1,11 +1,10 @@
-import React from "react"
-import { useState, useEffect } from "react"
-import { Home } from "./components/Home"
-const About = React.lazy(() => import("./components/About"))
-import { Projects } from "./components/Projects"
-import { Project } from "./components/Project"
-import { Contact } from "./components/Contact"
-import { Nav } from "./components/Nav"
+import React, { useState, useEffect } from "react"
+import Nav from "./components/Nav"
+import Home from "./components/Home"
+import About from "./components/About"
+import Projects from "./components/Projects"
+import Project from "./components/Project"
+import Contact from "./components/Contact"
 import projects from "../src/projects/projects"
 
 function App() {

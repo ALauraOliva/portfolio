@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { RxHamburgerMenu } from "react-icons/rx"
 import { RiCloseLine } from "react-icons/ri"
 
-export const Nav = ({ colorLinks }) => {
+const Nav = ({ colorLinks }) => {
   const [isNavVisible, setIsNavVisible] = useState(false)
 
   const openNav = () => {
@@ -60,3 +60,5 @@ export const Nav = ({ colorLinks }) => {
     </nav>
   )
 }
+
+export default Nav
