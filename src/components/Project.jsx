@@ -77,23 +77,7 @@ const Project = ({ project }) => {
         </article>
         <article className="project_slide">
           <h1>{project.name}</h1>
-          <div className="project_content">
-            <p className="project_resume">{project.resume} </p>
-            <div className="project_subContent">
-              <h2>Role</h2>
-              <div className="project_roles">
-                {project.role.map((role, index) => (
-                  <span key={index}>{role}</span>
-                ))}
-              </div>
-              <h2>Tech Stack</h2>
-              <div className="project_techs">
-                {project.tech.map((tech, index) => (
-                  <span key={index}>{tech}</span>
-                ))}
-              </div>
-            </div>
-          </div>
+          <div>Hola</div>
         </article>
       </div>
 

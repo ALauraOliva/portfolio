@@ -1,7 +1,6 @@
 import React from "react"
 import techs from "../projects/techs"
 import timeLine from "../projects/education_details"
-import { LazyLoadImage } from "react-lazy-load-image-component"
 
 const About = () => {
   const categories = ["front", "back", "other"]
@@ -46,11 +45,7 @@ const About = () => {
                   .filter((tech) => tech.category === category)
                   .map((tech) => (
                     <figure key={tech.techName}>
-                      <LazyLoadImage
-                        src={tech.icon}
-                        placeholderSrc="/src/assets/svg/placeholder.svg"
-                        alt={tech.techName}
-                      />
+                      <img src={tech.icon} alt={tech.techName} />
                       <figcaption>{tech.techName}</figcaption>
                     </figure>
                   ))}

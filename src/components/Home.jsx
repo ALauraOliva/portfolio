@@ -1,7 +1,6 @@
 import React from "react"
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
 import { HiDocumentText } from "react-icons/hi2"
-import { LazyLoadImage } from "react-lazy-load-image-component"
 
 const Home = () => {
   const phraseLogo = "andrea laura | andrea laura |"
@@ -22,7 +21,7 @@ const Home = () => {
             ))}
           </p>
         </div>
-        <LazyLoadImage src="/src/assets/myPhoto.webp" alt="photo" />
+        <img src="/src/assets/myPhoto.webp" alt="photo" />
       </article>
       <article className="home_right">
         <div>
