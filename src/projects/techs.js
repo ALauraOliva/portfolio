@@ -52,7 +52,7 @@ const techs = [
   },
   {
     techName: "AS400",
-    icon: "/static/svg/As400Icon.svg",
+    icon: "/static/svg/as400Icon.svg",
     category: "back",
   },
   {
