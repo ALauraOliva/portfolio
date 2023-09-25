@@ -6,7 +6,7 @@ import { HiDocumentText } from "react-icons/hi2"
 
 const Home = () => {
   const language = useContext(langContext)
-  const phraseLogo = "andrea laura | andrea laura |"
+  const phraseLogo = "andrea laura | andrea laura | "
   const deg = 360 / phraseLogo.length
   const [isChecked, setIsChecked] = useState(false)
 
