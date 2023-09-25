@@ -36,7 +36,7 @@ const About = () => {
           <div className="about_line"></div>
           <h2>
             <FormattedMessage
-              id="about.subtitle1"
+              id="about.subtitle2"
               defaultMessage="Technologies"
             />
           </h2>
@@ -67,7 +67,7 @@ const About = () => {
         <div className="title_content">
           <h2>
             <FormattedMessage
-              id="about.subtitle"
+              id="about.subtitle1"
               defaultMessage="Technologies"
             />
           </h2>
