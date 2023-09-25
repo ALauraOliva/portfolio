@@ -24,7 +24,9 @@ const Home = () => {
         <img src="/static/myPhoto.webp" alt="photo" />
       </article>
       <article className="home_right">
-        <div>
+        <div className="home_rightContainer">
+          <input type="checkbox" className="toggle" id="check" />
+          <label htmlFor="check" className="rounded"></label>
           <h1>FULL STACK DEVELOPER</h1>
           <h2>Transform lines of code into unique web experiences.</h2>
           <ul>

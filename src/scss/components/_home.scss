@@ -60,61 +60,113 @@
     linear-gradient(to right, #244d5e 1.3px, #0c3a4d 1.3px);
   background-size: 2.6rem 2.6rem;
   z-index: 2;
-  div {
+  position: relative;
+  .home_rightContainer {
     margin: auto;
-  }
-  h1 {
-    font-size: 10rem;
-    width: min-content;
-    color: $primaryColor;
-    font-weight: 800;
-  }
-  h2 {
-    font-size: 2.35rem;
-    font-weight: 500;
-    color: $secondaryColor;
-  }
-  ul {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    gap: 2rem;
-    margin: 5rem 0 0 0;
-    list-style-type: none;
-  }
+    input[type="checkbox"].toggle {
+      position: absolute;
+      opacity: 0;
+      top: -9000px;
+      left: -9000px;
+    }
+    input[type="checkbox"].toggle + label {
+      cursor: pointer;
+      position: absolute;
+      top: calc(100% - 5.5rem);
+      left: calc(100% - 11rem);
+      font-size: 2rem;
+      display: flex;
+      &::before {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 EN";
+        font-size: 1em;
+        position: relative;
+        width: 4em;
+        height: 2em;
+        border-radius: 1em;
+        font-weight: 500;
+        color: $primaryColor;
+        background-color: $secondaryColor;
+        transition: 200ms ease-in-out;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1.9em;
+        height: 1.8em;
+        left: 0.1em;
+        top: 0.1em;
+        border-radius: 1em;
+        background-color: $primaryColor;
+        transition: 200ms ease-in-out;
+      }
+    }
+    input[type="checkbox"].toggle:checked + label {
+      color: red;
+      &::after {
+        transform: translateX(100%);
+        background-color: $thirdColor;
+      }
+      &::before {
+        content: "\00a0\00a0SP";
+        color: $thirdColor;
+      }
+    }
+    h1 {
+      font-size: 10rem;
+      width: min-content;
+      color: $primaryColor;
+      font-weight: 800;
+    }
+    h2 {
+      font-size: 2.35rem;
+      font-weight: 500;
+      color: $secondaryColor;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      gap: 2rem;
+      margin: 5rem 0 0 0;
+      list-style-type: none;
+    }
 
-  tool-tip {
-    position: absolute;
-    z-index: 1;
-    pointer-events: none;
-    user-select: none;
-    padding: 0.5rem 1rem;
-    font-size: 1.5rem;
-    color: $secondaryColor;
-    border-radius: 8px;
-    top: 100%;
-    margin: 1rem 0 0 0;
-    left: 12.5%;
-    width: 70%;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    background-color: $primaryColor;
-  }
+    tool-tip {
+      position: absolute;
+      z-index: 1;
+      pointer-events: none;
+      user-select: none;
+      padding: 0.5rem 1rem;
+      font-size: 1.5rem;
+      color: $secondaryColor;
+      border-radius: 8px;
+      top: 100%;
+      margin: 1rem 0 0 0;
+      left: 12.5%;
+      width: 70%;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      background-color: $primaryColor;
+    }
 
-  :has(> tool-tip) {
-    position: relative;
-  }
-  :has(> tool-tip):hover tool-tip {
-    opacity: 1;
-  }
+    :has(> tool-tip) {
+      position: relative;
+    }
+    :has(> tool-tip):hover tool-tip {
+      opacity: 1;
+    }
 
-  .home-react-icons {
-    height: 8rem;
-    width: 8rem;
-    color: $secondaryColor;
-    &:hover {
-      transform: scale(1.2);
+    .home-react-icons {
+      height: 8rem;
+      width: 8rem;
+      color: $secondaryColor;
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 }
