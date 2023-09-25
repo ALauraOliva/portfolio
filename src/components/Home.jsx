@@ -69,7 +69,11 @@ const Home = () => {
             </li>
             <li>
               <a
-                href="/static/Docs/Andrea_Laura_Eng.pdf"
+                href={
+                  isChecked
+                    ? "/static/Docs/Andrea_Laura_Esp.pdf"
+                    : "/static/Docs/Andrea_Laura_Eng.pdf"
+                }
                 target="_blank"
                 rel="noopener noreferrer"
               >
