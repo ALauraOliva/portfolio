@@ -1,10 +1,11 @@
-import React, { useState } from "react"
-import { FormattedMessage } from "react-intl"
+import React, { useState, useContext } from "react"
+import { langContext } from "../context/langContext"
 import { RxHamburgerMenu } from "react-icons/rx"
 import { RiCloseLine } from "react-icons/ri"
 
 const Nav = ({ colorLinks }) => {
   const [isNavVisible, setIsNavVisible] = useState(false)
+  const { messages } = useContext(langContext)
 
   const openNav = () => {
     setIsNavVisible(true)
@@ -38,22 +39,22 @@ const Nav = ({ colorLinks }) => {
         <ul className="nav">
           <li>
             <a href="#home" style={{ color: colorLinks }}>
-              <FormattedMessage id="nav.home" defaultMessage="Home" />
+              {messages.nav.home}
             </a>
           </li>
           <li>
             <a href="#about" style={{ color: colorLinks }}>
-              <FormattedMessage id="nav.about" defaultMessage="About" />
+              {messages.nav.about}
             </a>
           </li>
           <li>
             <a href="#projects" style={{ color: colorLinks }}>
-              <FormattedMessage id="nav.projects" defaultMessage="Projects" />
+              {messages.nav.projects}
             </a>
           </li>
           <li>
             <a href="#contact" style={{ color: colorLinks }}>
-              <FormattedMessage id="nav.contact" defaultMessage="Contact" />
+              {messages.nav.contact}
             </a>
           </li>
         </ul>

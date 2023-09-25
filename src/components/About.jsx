@@ -1,45 +1,24 @@
-import React from "react"
-import { FormattedMessage } from "react-intl"
+import React, { useContext } from "react"
+import { langContext } from "../context/langContext"
 import techs from "../projects/techs"
-import timeLine from "../projects/education_details"
 
 const About = () => {
   const categories = ["front", "back", "other"]
+  const { messages } = useContext(langContext)
+
   return (
     <section id="about" className="about_section">
       <div className="about_title">
-        <h1>
-          <FormattedMessage id="about.title" defaultMessage="about ME" />
-        </h1>
+        <h1>{messages.about.title}</h1>
       </div>
       <article className="about_info">
         <div className="about_resume">
-          <p>
-            <FormattedMessage
-              id="about.p1"
-              defaultMessage="about me paragraph 1"
-              values={{
-                span: (chunks) => (
-                  <span dangerouslySetInnerHTML={{ __html: chunks.join("") }} />
-                ),
-              }}
-            />
-          </p>
-          <p>
-            <FormattedMessage
-              id="about.p2"
-              defaultMessage="about me paragraph 2"
-            />
-          </p>
+          <p dangerouslySetInnerHTML={{ __html: messages.about.p1 }}></p>
+          <p>{messages.about.p2}</p>
         </div>
         <div className="title_content">
           <div className="about_line"></div>
-          <h2>
-            <FormattedMessage
-              id="about.subtitle2"
-              defaultMessage="Technologies"
-            />
-          </h2>
+          <h2>{messages.about.subtitle2}</h2>
         </div>
         <div className="about_categories">
           {categories.map((category) => (
@@ -49,7 +28,7 @@ const About = () => {
                   ? "Front"
                   : category === "back"
                   ? "Back"
-                  : "Others"}
+                  : `${messages.about.other}`}
               </h3>
               <div key={category} className="about_stack">
                 {techs
@@ -65,17 +44,12 @@ const About = () => {
           ))}
         </div>
         <div className="title_content">
-          <h2>
-            <FormattedMessage
-              id="about.subtitle1"
-              defaultMessage="Technologies"
-            />
-          </h2>
+          <h2>{messages.about.subtitle1}</h2>
           <div className="about_line"></div>
         </div>
         <div className="timeline_cont">
           <section>
-            {timeLine?.map((exp, index) => (
+            {messages.timeLine?.map((exp, index) => (
               <div className="line" key={index}>
                 <img src={exp.img} alt={exp.alt} />
                 <div className="details">

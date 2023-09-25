@@ -1,15 +1,14 @@
-import React from "react"
-import projects from "../projects/projects"
-import { FormattedMessage } from "react-intl"
+import React, { useContext } from "react"
+import { langContext } from "../context/langContext"
 
 const Projects = () => {
+  const { messages } = useContext(langContext)
+
   return (
     <section id="projects" className="projects_section">
-      <h1>
-        <FormattedMessage id="projects.title" />
-      </h1>
+      <h1>{messages.projects_title}</h1>
       <ul>
-        {projects.map((project) => (
+        {messages.project.map((project) => (
           <li key={project.name}>
             <a href={`#${project.name}`}>{project.name}</a>
           </li>

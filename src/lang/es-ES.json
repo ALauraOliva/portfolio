@@ -1,11 +1,14 @@
 {
-  "home.subTitle": "Transformo líneas de código en experiencias web únicas.",
+  "home_subTitle": "Transformo líneas de código en experiencias web únicas.",
+  "about": {
+    "title": "sobre MI",
+    "p1": "Graduada en <span>Ingeniería de Sistemas</span>, en busca de emocionantes desafíos en el campo del desarrollo Full Stack, con un enfoque particular en el <span>Front-End</span>. También poseo habilidades sólidas en el <span>Back End</span>, lo que me permite comprender y abordar proyectos de manera integral, desde el diseño de la interfaz de usuario hasta la gestión de datos en el backend.",
+    "p2": "Mi objetivo es contribuir al desarrollo de soluciones tecnológicas innovadoras y eficientes, aprovechando mi educación y pasión por el desarrollo para tener un impacto en el mundo digital.",
+    "subtitle1": "Tecnologías",
+    "subtitle2": "Educación & Experiencia",
+    "other": "Otros"
+  },
 
-  "about.title": "sobre MI",
-  "about.p1": "Graduada en <span>Ingeniería de Sistemas</span>, en busca de emocionantes desafíos en el campo del desarrollo Full Stack, con un enfoque particular en el <span>Front-End</span>. También poseo habilidades sólidas en el <span>Back End</span>, lo que me permite comprender y abordar proyectos de manera integral, desde el diseño de la interfaz de usuario hasta la gestión de datos en el backend.",
-  "about.p2": "Mi objetivo es contribuir al desarrollo de soluciones tecnológicas innovadoras y eficientes, aprovechando mi educación y pasión por el desarrollo para tener un impacto en el mundo digital.",
-  "about.subtitle1": "Tecnologías",
-  "about.subtitle2": "Educación & Experiencia",
   "timeLine": [
     {
       "img": "/static/svg/graduateIcon.svg",
@@ -18,14 +21,14 @@
       "img": "/static/svg/workIcon.svg",
       "alt": "workIcon",
       "year": "2022",
-      "title": "Development Analyst | Incalpaca",
+      "title": "Analista - Desarrollador | Incalpaca",
       "description": "Desarrollé programas en Genexus según los requisitos empresariales, utilizando MySQL para consultas diarias a la base de datos y la integración de resultados en soluciones eficaces. Mejoré funcionalidades en programas existentes para satisfacer las demandas comerciales y optimizar el rendimiento en producción. Diseñé pruebas exhaustivas para validar el correcto funcionamiento de programas nuevos y existentes en producción, garantizando su eficacia"
     },
     {
       "img": "/static/svg/workIcon.svg",
       "alt": "workIcon",
       "year": "2021",
-      "title": "Analyst Programmer | De Larrobla & Asociados (DL&A)",
+      "title": "Analista - Programador | De Larrobla & Asociados (DL&A)",
       "description": "Desarrollé programas utilizando GeneXus, automatizando el intercambio de datos a través de SOAPUI, mejorando funcionalidades y rendimiento en programas existentes, y empleando AS400 para consultas a bases de datos. Además, proporcioné documentación detallada de procesos y mejoras en un entorno de desarrollo de software para entidades financieras, siguiendo la metodología Scrum y colaborando con equipos internacionales de diferentes países."
     },
     {
@@ -37,17 +40,134 @@
     }
   ],
 
-  "projects.title": "proyectos",
+  "projects_title": "proyectos",
 
-  "nav.home": "Inicio",
-  "nav.about": "Perfil",
-  "nav.projects": "Proyectos",
-  "nav.contact": "Contacto",
+  "project": [
+    {
+      "name": "GreenLand",
+      "date": "Septiembre - 2023",
+      "role": ["Front - End"],
+      "githubLink": "https://github.com/ALauraOliva/GreenLand",
+      "deployLink": "https://greenland-client.vercel.app/",
+      "img1": "/static/GreenLand1.webp",
+      "img2": "/static/GreenLand2.webp",
+      "tech": [
+        "React",
+        "Vite",
+        "CSS",
+        "HTML",
+        "Redux",
+        "JavaScript",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "Sequelize",
+        "Firebase",
+        "Mercado Pago",
+        "nodemailer"
+      ],
+      "role_name": "Rol",
+      "stack": "Conjunto de Tecnologías",
+      "deploy": "Despliegue",
+      "repository": "Respositorio",
+      "resume": "Plataforma de comercio electrónico que ofrece una experiencia integral tanto para compradores como para administradores. Los usuarios pueden iniciar sesión o registrarse utilizando su cuenta de Google o crear una nueva cuenta directamente en el sitio web. La aplicación incluye características como una lista de deseos, un carrito de compras y la opción de realizar pagos a través de MercadoPago. Además, ofrece dos tipos de inicio de sesión: uno para usuarios compradores y otro para administradores. Los administradores tienen acceso a un panel exclusivo donde pueden gestionar todos los productos, editarlos y también ver información sobre los usuarios registrados, sus compras y ventas. Los usuarios tienen la capacidad de editar sus perfiles y cambiar sus contraseñas, además de poder ver los detalles de cada producto en venta.",
+      "resume_part2": "En resumen, la aplicación ofrece una experiencia completa de compras en línea con características adicionales para una gestión eficiente, tanto para compradores como para administradores."
+    },
+    {
+      "name": "Portfolio",
+      "date": "Septiembre - 2023",
+      "role": ["Front - End"],
+      "githubLink": "https://github.com/ALauraOliva/portfolio",
+      "deployLink": "https://github.com/ALauraOliva/portfolio",
+      "img1": "/static/portfolio1.webp",
+      "img2": "/static/portfolio2.webp",
+      "tech": [
+        "React",
+        "SASS",
+        "CSS",
+        "HTML",
+        "JavaScript",
+        "Vite",
+        "email.js"
+      ],
+      "role_name": "Rol",
+      "stack": "Conjunto de Tecnologías",
+      "deploy": "Despliegue",
+      "repository": "Respositorio",
+      "resume": "Mi portafolio es un reflejo de mi personalidad, habilidades y perspectiva creativa. Muestra mis proyectos destacados y demuestra un compromiso de utilizar CSS puro para todo, incluyendo notificaciones, ventanas emergentes, animaciones y más. Durante su desarrollo, me adherí a las mejores prácticas para entregar un producto con un rendimiento y presentación óptimos.",
+      "resume_part2": "En esencia, mi portafolio encapsula mi trayectoria profesional, mostrando mi personalidad, habilidades, creatividad y firme compromiso de ofrecer excelencia en diseño y desarrollo web."
+    },
+    {
+      "name": "Rick and Morty",
+      "date": "Junio - 2023",
+      "role": ["Front - End", "Back - End"],
+      "githubLink": "https://github.com/ALauraOliva/Rick-and-Morty",
+      "deployLink": "https://rick-and-morty-appp.netlify.app/",
+      "img1": "/static/rickandmorty1.webp",
+      "img2": "/static/rickandmorty2.webp",
+      "tech": [
+        "React",
+        "CSS",
+        "HTML",
+        "Redux",
+        "JavaScript",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "Sequelize",
+        "External API"
+      ],
+      "role_name": "Rol",
+      "stack": "Conjunto de Tecnologías",
+      "deploy": "Despliegue",
+      "repository": "Respositorio",
+      "resume": "Representa un hito significativo en mi trayectoria como desarrollador, ya que marcó mi primera incursión en React. Esta Aplicación de Página Única (SPA) aprovecha la API de 'Rick and Morty', ofreciendo a los usuarios una plataforma dinámica para buscar, filtrar y ordenar personajes del programa. Inspirándome en la vibrante paleta de colores de la serie y los elementos temáticos que abarcan universos y el espacio, infundí la esencia del propio programa en la aplicación. Las características de la aplicación incluyen filtros sólidos para la ordenación alfabética, tanto ascendente como descendente, así como la posibilidad de filtrar por raza y género de los personajes. Los usuarios pueden sumergirse en información detallada de los personajes, presentada en un formato de 'tarjeta de identificación' de fácil acceso. Para mejorar la experiencia del usuario, los datos de los personajes se almacenan en una base de datos. Para simplificar, como mi proyecto inicial, implementé una funcionalidad básica de inicio de sesión utilizando un correo electrónico y contraseña predefinidos.",
+      "resume_part2": "En esencia, mi aplicación de 'Rick and Morty' es un testimonio de mi crecimiento como desarrollador y mi capacidad para crear aplicaciones atractivas y visualmente agradables, al mismo tiempo que ofrezco una experiencia de usuario excepcional."
+    },
+    {
+      "name": "Pokedex",
+      "date": "Junio - 2023",
+      "role": ["Front - End", "Back - End"],
+      "githubLink": "https://github.com/ALauraOliva/Pokemon_App",
+      "deployLink": "https://pokedexappplication.netlify.app/",
+      "img1": "/static/pokemon1.webp",
+      "img2": "/static/pokemon2.webp",
+      "tech": [
+        "React",
+        "CSS",
+        "HTML",
+        "Redux",
+        "JavaScript",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "Sequelize",
+        "External API"
+      ],
+      "role_name": "Rol",
+      "stack": "Conjunto de Tecnologías",
+      "deploy": "Despliegue",
+      "repository": "Respositorio",
+      "resume": "Mi aplicación de Pokémon es una vibrante y atractiva Aplicación de Página Única (SPA) inspirada en el colorido mundo de la serie Pokémon. Permite a los usuarios explorar, buscar, filtrar y ordenar Pokémon según su tipo y niveles de ataque, todo mientras acceden a datos específicos a través de consultas a una API dedicada. Tomando inspiración de la distintiva paleta de colores de la serie, la aplicación captura la esencia del universo Pokémon. También ofrece una característica única donde los usuarios pueden diseñar su propio Pokémon, añadiendo un toque creativo y personal a la experiencia. Para mejorar la participación y comodidad del usuario, la aplicación permite a los usuarios guardar sus Pokémon favoritos en una lista, que se almacena de forma segura en una base de datos. Esta función asegura que los usuarios puedan volver a visitar e interactuar con sus Pokémon seleccionados en cualquier momento.",
+      "resume_part2": "En resumen, mi aplicación de Pokémon es un homenaje a la querida franquicia, ofreciendo a los fans y entusiastas una plataforma dinámica e interactiva para explorar y crear sus propios Pokémon, al mismo tiempo que proporciona funcionalidades esenciales de búsqueda y clasificación."
+    }
+  ],
 
-  "contact.title": "CONTACTO",
-  "contact.name": "Nombre",
-  "contact.phone": "Celular",
-  "contact.email": "Email",
-  "contact.message": "Mensaje",
-  "contact.submit": "Enviar"
+  "nav": {
+    "home": "Inicio",
+    "about": "Perfil",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+
+  "contact": {
+    "name": "Nombre",
+    "title": "CONTACTO",
+    "phone": "Celular",
+    "email": "Email",
+    "message": "Mensaje",
+    "submit": "Enviar",
+    "messageGood": "Gracias por tu mensaje!",
+    "messageBad": "Lo siento, no se pudo enviar el mensaje"
+  }
 }

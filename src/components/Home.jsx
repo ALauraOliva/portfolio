@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react"
-import { FormattedMessage } from "react-intl"
 import { langContext } from "../context/langContext"
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
 import { HiDocumentText } from "react-icons/hi2"
@@ -46,12 +45,7 @@ const Home = () => {
           />
           <label htmlFor="check" onClick={handleLabelClick}></label>
           <h1>FULL STACK DEVELOPER</h1>
-          <h2>
-            <FormattedMessage
-              id="home.subTitle"
-              defaultMessage="Transform lines of code into unique web experiences."
-            />
-          </h2>
+          <h2>{language.messages.home_subTitle}</h2>
           <ul>
             <li>
               <a

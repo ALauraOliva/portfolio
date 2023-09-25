@@ -38,7 +38,7 @@ const Project = ({ project }) => {
                   >
                     <img src="/static/svg/rocketIcon.svg" alt="go_to_deploy" />
                   </a>
-                  <tool-tip role="tooltip">Deploy</tool-tip>
+                  <tool-tip role="tooltip">{project.deploy}</tool-tip>
                 </li>
                 <li>
                   <a
@@ -51,19 +51,19 @@ const Project = ({ project }) => {
                       alt="go_to_repository"
                     />
                   </a>
-                  <tool-tip role="tooltip">Repository</tool-tip>
+                  <tool-tip role="tooltip">{project.repository}</tool-tip>
                 </li>
               </ul>
             </div>
             <div className="project_subContent">
               <span>{project.date}</span>
-              <h2>Role</h2>
+              <h2> {project.role_name}</h2>
               <div className="project_roles">
                 {project.role.map((role, index) => (
                   <span key={index}>{role}</span>
                 ))}
               </div>
-              <h2>Tech Stack</h2>
+              <h2>{project.stack}</h2>
               <div className="project_techs">
                 {project.tech.map((tech, index) => (
                   <span key={index}>{tech}</span>

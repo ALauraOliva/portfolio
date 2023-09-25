@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useContext } from "react"
+import { langContext } from "./context/langContext"
 import Nav from "./components/Nav"
 import Home from "./components/Home"
 import About from "./components/About"
 import Projects from "./components/Projects"
 import Project from "./components/Project"
 import Contact from "./components/Contact"
-import projects from "../src/projects/projects"
 
 function App() {
   const [colorLinks, setColorLinks] = useState("#f2e8d5")
+  const { messages } = useContext(langContext)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,7 +53,7 @@ function App() {
       <Home />
       <About />
       <Projects />
-      {projects.map((project) => (
+      {messages.project.map((project) => (
         <Project key={project.name} project={project} />
       ))}
       <Contact />
