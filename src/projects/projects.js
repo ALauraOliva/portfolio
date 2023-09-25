@@ -5,8 +5,8 @@ const projects = [
     role: ["Front - End"],
     githubLink: "https://github.com/ALauraOliva/GreenLand",
     deployLink: "https://greenland-client.vercel.app/",
-    img1: "/src/assets/GreenLand1.webp",
-    img2: "/src/assets/GreenLand2.webp",
+    img1: "/static/GreenLand1.webp",
+    img2: "/static/GreenLand2.webp",
     tech: [
       "React",
       "Vite",
@@ -33,8 +33,8 @@ const projects = [
     role: ["Front - End"],
     githubLink: "https://github.com/ALauraOliva/portfolio",
     deployLink: "https://github.com/ALauraOliva/portfolio",
-    img1: "/src/assets/portfolio1.webp",
-    img2: "/src/assets/portfolio2.webp",
+    img1: "/static/portfolio1.webp",
+    img2: "/static/portfolio2.webp",
     tech: ["React", "SASS", "CSS", "HTML", "JavaScript", "Vite", "email.js"],
     resume:
       "My portfolio is a reflection of my personality, skills, and creative perspective. It showcases my notable projects and demonstrates a commitment to using pure CSS for everything, including notifications, popups, animations, and more. Throughout its development, I adhered to the best practices to deliver a product with optimal performance and presentation.",
@@ -47,8 +47,8 @@ const projects = [
     role: ["Front - End", "Back - End"],
     githubLink: "https://github.com/ALauraOliva/Rick-and-Morty",
     deployLink: "https://rick-and-morty-appp.netlify.app/",
-    img1: "/src/assets/rickandmorty1.webp",
-    img2: "/src/assets/rickandmorty2.webp",
+    img1: "/static/rickandmorty1.webp",
+    img2: "/static/rickandmorty2.webp",
     tech: [
       "React",
       "CSS",
@@ -72,8 +72,8 @@ const projects = [
     role: ["Front - End", "Back - End"],
     githubLink: "https://github.com/ALauraOliva/Pokemon_App",
     deployLink: "https://pokedexappplication.netlify.app/",
-    img1: "/src/assets/pokemon1.webp",
-    img2: "/src/assets/pokemon2.webp",
+    img1: "/static/pokemon1.webp",
+    img2: "/static/pokemon2.webp",
     tech: [
       "React",
       "CSS",

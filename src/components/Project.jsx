@@ -36,10 +36,7 @@ const Project = ({ project }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img
-                      src="/src/assets/svg/rocketIcon.svg"
-                      alt="go_to_deploy"
-                    />
+                    <img src="/static/svg/rocketIcon.svg" alt="go_to_deploy" />
                   </a>
                   <tool-tip role="tooltip">Deploy</tool-tip>
                 </li>
@@ -50,7 +47,7 @@ const Project = ({ project }) => {
                     rel="noopener noreferrer"
                   >
                     <img
-                      src="/src/assets/svg/githubIcon.svg"
+                      src="/static/svg/githubIcon.svg"
                       alt="go_to_repository"
                     />
                   </a>

@@ -21,7 +21,7 @@ const Home = () => {
             ))}
           </p>
         </div>
-        <img src="/src/assets/myPhoto.webp" alt="photo" />
+        <img src="/static/myPhoto.webp" alt="photo" />
       </article>
       <article className="home_right">
         <div>
@@ -50,7 +50,7 @@ const Home = () => {
             </li>
             <li>
               <a
-                href="/src/assets/Docs/Andrea_Laura_Eng.pdf"
+                href="/static/Docs/Andrea_Laura_Eng.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
