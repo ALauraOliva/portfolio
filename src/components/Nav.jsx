@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { FormattedMessage } from "react-intl"
 import { RxHamburgerMenu } from "react-icons/rx"
 import { RiCloseLine } from "react-icons/ri"
 
@@ -37,22 +38,22 @@ const Nav = ({ colorLinks }) => {
         <ul className="nav">
           <li>
             <a href="#home" style={{ color: colorLinks }}>
-              Home
+              <FormattedMessage id="nav.home" defaultMessage="Home" />
             </a>
           </li>
           <li>
             <a href="#about" style={{ color: colorLinks }}>
-              About
+              <FormattedMessage id="nav.about" defaultMessage="About" />
             </a>
           </li>
           <li>
             <a href="#projects" style={{ color: colorLinks }}>
-              Projects
+              <FormattedMessage id="nav.projects" defaultMessage="Projects" />
             </a>
           </li>
           <li>
             <a href="#contact" style={{ color: colorLinks }}>
-              Contact
+              <FormattedMessage id="nav.contact" defaultMessage="Contact" />
             </a>
           </li>
         </ul>

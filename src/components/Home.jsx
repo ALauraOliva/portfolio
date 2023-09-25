@@ -1,10 +1,22 @@
-import React from "react"
+import React, { useContext, useState } from "react"
+import { FormattedMessage } from "react-intl"
+import { langContext } from "../context/langContext"
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
 import { HiDocumentText } from "react-icons/hi2"
 
 const Home = () => {
+  const language = useContext(langContext)
   const phraseLogo = "andrea laura | andrea laura |"
   const deg = 360 / phraseLogo.length
+  const [isChecked, setIsChecked] = useState(false)
+
+  const handleLabelClick = () => {
+    if (isChecked) {
+      language.setLanguage("en-US")
+    } else {
+      language.setLanguage("es-ES")
+    }
+  }
 
   return (
     <section id="home" className="home_section">
@@ -25,10 +37,21 @@ const Home = () => {
       </article>
       <article className="home_right">
         <div className="home_rightContainer">
-          <input type="checkbox" className="toggle" id="check" />
-          <label htmlFor="check" className="rounded"></label>
+          <input
+            type="checkbox"
+            className="toggle"
+            id="check"
+            checked={isChecked}
+            onChange={() => setIsChecked(!isChecked)}
+          />
+          <label htmlFor="check" onClick={handleLabelClick}></label>
           <h1>FULL STACK DEVELOPER</h1>
-          <h2>Transform lines of code into unique web experiences.</h2>
+          <h2>
+            <FormattedMessage
+              id="home.subTitle"
+              defaultMessage="Transform lines of code into unique web experiences."
+            />
+          </h2>
           <ul>
             <li>
               <a

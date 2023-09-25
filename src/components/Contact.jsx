@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react"
+import { FormattedMessage } from "react-intl"
 import emailjs from "@emailjs/browser"
 
 const Contact = () => {
@@ -34,27 +35,41 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact_section">
-      <h1>GET in TOUCH</h1>
+      <h1>
+        <FormattedMessage id="contact.title" />
+      </h1>
       <form ref={form} onSubmit={sendEmail}>
         <div className="row">
           <div className="contact_inputGroup">
             <input type="text" id="name" name="user_name" required />
-            <label htmlFor="name"> Your Name</label>
+            <label htmlFor="name">
+              <FormattedMessage id="contact.name" />
+            </label>
           </div>
           <div className="contact_inputGroup">
             <input type="text" id="number" name="user_phone" required />
-            <label htmlFor="number"> Phone No.</label>
+            <label htmlFor="number">
+              <FormattedMessage id="contact.phone" />
+            </label>
           </div>
         </div>
         <div className="contact_inputGroup">
           <input type="email" id="email" name="user_email" required />
-          <label htmlFor="email"> Email</label>
+          <label htmlFor="email">
+            {" "}
+            <FormattedMessage id="contact.email" />
+          </label>
         </div>
         <div className="contact_inputGroup">
           <textarea id="message" rows="9" name="message" required></textarea>
-          <label htmlFor="message"> Your Message</label>
+          <label htmlFor="message">
+            {" "}
+            <FormattedMessage id="contact.message" />
+          </label>
         </div>
-        <button type="submit">SUBMIT</button>
+        <button type="submit">
+          <FormattedMessage id="contact.submit" />
+        </button>
       </form>
 
       {popupMessage && (

@@ -1,4 +1,5 @@
 import React from "react"
+import { FormattedMessage } from "react-intl"
 import techs from "../projects/techs"
 import timeLine from "../projects/education_details"
 
@@ -7,28 +8,38 @@ const About = () => {
   return (
     <section id="about" className="about_section">
       <div className="about_title">
-        <h1>about ME</h1>
+        <h1>
+          <FormattedMessage id="about.title" defaultMessage="about ME" />
+        </h1>
       </div>
       <article className="about_info">
         <div className="about_resume">
           <p>
-            Graduated in <span>Systems Engineering</span>, in search of exciting
-            challenges in the field of Full Stack development, with a particular
-            focus on the
-            <span> Front-End</span>. I also possess strong skills in the
-            <span> Back End</span>, which allows me to comprehend and tackle
-            projects comprehensively, from user interface design to data
-            management in the backend.
+            <FormattedMessage
+              id="about.p1"
+              defaultMessage="about me paragraph 1"
+              values={{
+                span: (chunks) => (
+                  <span dangerouslySetInnerHTML={{ __html: chunks.join("") }} />
+                ),
+              }}
+            />
           </p>
           <p>
-            My goal is to contribute to the development of innovative and
-            efficient technological solutions, leveraging my education and
-            passion for delevopment to make an impact in the digital world.
+            <FormattedMessage
+              id="about.p2"
+              defaultMessage="about me paragraph 2"
+            />
           </p>
         </div>
         <div className="title_content">
           <div className="about_line"></div>
-          <h2>Technologies</h2>
+          <h2>
+            <FormattedMessage
+              id="about.subtitle1"
+              defaultMessage="Technologies"
+            />
+          </h2>
         </div>
         <div className="about_categories">
           {categories.map((category) => (
@@ -54,7 +65,12 @@ const About = () => {
           ))}
         </div>
         <div className="title_content">
-          <h2>Studies & Experience</h2>
+          <h2>
+            <FormattedMessage
+              id="about.subtitle"
+              defaultMessage="Technologies"
+            />
+          </h2>
           <div className="about_line"></div>
         </div>
         <div className="timeline_cont">
