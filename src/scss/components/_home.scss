@@ -87,7 +87,7 @@
         height: 2em;
         border-radius: 1em;
         font-weight: 500;
-        color: $primaryColor;
+        color: $thirdColor;
         background-color: $secondaryColor;
         transition: 200ms ease-in-out;
       }
@@ -99,7 +99,7 @@
         left: 0.1em;
         top: 0.1em;
         border-radius: 1em;
-        background-color: $primaryColor;
+        background-color: $thirdColor;
         transition: 200ms ease-in-out;
       }
     }
@@ -107,11 +107,11 @@
       color: red;
       &::after {
         transform: translateX(100%);
-        background-color: $thirdColor;
+        background-color: $primaryColor;
       }
       &::before {
-        content: "\00a0\00a0SP";
-        color: $thirdColor;
+        content: "\00a0\00a0 ES";
+        color: $primaryColor;
       }
     }
     h1 {
