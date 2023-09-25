@@ -76,8 +76,12 @@ const Project = ({ project }) => {
           </div>
         </article>
         <article className="project_slide">
-          <h1>{project.name}</h1>
-          <div>Hola</div>
+          <div className="project_imgs_cont">
+            <div className="project_position">
+              <img src={project.img1} alt="img1" className="img1" />
+              <img src={project.img2} alt="img2" className="img2" />
+            </div>
+          </div>
         </article>
       </div>
 
