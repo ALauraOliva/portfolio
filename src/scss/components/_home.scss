@@ -22,6 +22,10 @@
     width: 36rem;
     height: 36rem;
     animation: spin 50s linear infinite;
+    @include iphoneMini {
+      width: 30rem;
+      height: 30rem;
+    }
   }
   .home_spinning span {
     position: absolute;
@@ -32,6 +36,9 @@
     top: 0%;
     left: 48%;
     transform-origin: center 18rem;
+    @include iphoneMini {
+      transform-origin: center 15rem;
+    }
   }
   @keyframes spin {
     0% {
@@ -49,6 +56,10 @@
     object-position: top;
     border-radius: 50%;
     background: $primaryColor;
+    @include iphoneMini {
+      width: 20rem;
+      height: 20rem;
+    }
   }
 }
 .home_right {

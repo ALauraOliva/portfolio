@@ -35,4 +35,7 @@ html {
   @include tablet {
     font-size: 50%;
   }
+  @include iphoneMini {
+    font-size: 25%;
+  }
 }
