@@ -15,6 +15,8 @@ const Nav = ({ colorLinks }) => {
     setIsNavVisible(false)
   }
 
+  const linkColor = isNavVisible ? "#0c3a4d" : colorLinks
+
   return (
     <nav className="nav_cont_global">
       <h1 className="nav_logo" style={{ color: colorLinks }}>
@@ -34,26 +36,26 @@ const Nav = ({ colorLinks }) => {
           id="close"
           onClick={closeNav}
         >
-          <RiCloseLine className="close_icon" />
+          <RiCloseLine className="close_icon" color={linkColor} />
         </button>
         <ul className="nav">
           <li>
-            <a href="#home" style={{ color: colorLinks }}>
+            <a href="#home" style={{ color: linkColor }}>
               {messages.nav.home}
             </a>
           </li>
           <li>
-            <a href="#about" style={{ color: colorLinks }}>
+            <a href="#about" style={{ color: linkColor }}>
               {messages.nav.about}
             </a>
           </li>
           <li>
-            <a href="#projects" style={{ color: colorLinks }}>
+            <a href="#projects" style={{ color: linkColor }}>
               {messages.nav.projects}
             </a>
           </li>
           <li>
-            <a href="#contact" style={{ color: colorLinks }}>
+            <a href="#contact" style={{ color: linkColor }}>
               {messages.nav.contact}
             </a>
           </li>
