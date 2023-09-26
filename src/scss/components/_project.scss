@@ -216,8 +216,8 @@
     transform: translate(-50%);
     display: flex;
     .bar {
-      width: 7rem;
-      height: 1.7rem;
+      width: 8rem;
+      height: 2rem;
       border: 0.2rem solid $secondaryColor;
       margin: 0.6rem;
       border-radius: 0.5rem;
@@ -225,6 +225,10 @@
       transition: 0.6s;
       &:hover {
         background-color: $secondaryColor;
+      }
+      @include mobile {
+        width: 15rem;
+        height: 5rem;
       }
     }
   }
