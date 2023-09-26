@@ -47,7 +47,7 @@
       }
       h1 {
         text-align: center;
-        width: 80%;
+        width: 100%;
         font-variant: small-caps;
       }
       .project_content {
@@ -194,7 +194,7 @@
   }
   .project_navigation {
     position: absolute;
-    bottom: 2rem;
+    bottom: 5rem;
     left: 50%;
     transform: translate(-50%);
     display: flex;
