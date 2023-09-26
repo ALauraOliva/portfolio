@@ -22,25 +22,42 @@
       align-items: center;
       .project_imgs_cont {
         width: 90%;
-        height: 80%;
+        height: 100%;
         .project_position {
           display: flex;
           align-items: center;
-          justify-content: space-between;
+          justify-content: space-around;
+          position: relative;
           width: 100%;
           height: 100%;
-          @include project_Img {
-            flex-direction: column;
-            justify-content: center;
-            gap: 10rem;
+          .img1 {
+            position: absolute;
+            top: -6rem;
+            left: 10rem;
+            width: 28%;
+            @include mobile {
+              height: 50%;
+              left: 0rem;
+              width: auto;
+            }
+            @include tablet {
+              width: 45%;
+              left: 0rem;
+            }
           }
-          .img1,
           .img2 {
-            max-width: 45%;
-            max-height: 50%;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-            @include project_Img {
-              max-width: 100%;
+            position: absolute;
+            bottom: -6rem;
+            right: 10rem;
+            width: 38%;
+            @include mobile {
+              height: 50%;
+              right: 0rem;
+              width: auto;
+            }
+            @include tablet {
+              width: 50%;
+              right: 0rem;
             }
           }
         }

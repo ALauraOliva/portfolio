@@ -10,14 +10,8 @@
   }
 }
 
-@mixin project_Img {
-  @media screen and (max-width: 1271px) {
-    @content;
-  }
-}
-
 @mixin tablet {
-  @media screen and (min-width: 768px) and (max-width: 1114px) {
+  @media screen and (min-width: 768px) and (max-width: 1079px) {
     @content;
   }
 }
