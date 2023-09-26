@@ -18,7 +18,7 @@ const About = () => {
         </div>
         <div className="title_content">
           <div className="about_line"></div>
-          <h2>{messages.about.subtitle2}</h2>
+          <h2>{messages.about.subtitle1}</h2>
         </div>
         <div className="about_categories">
           {categories.map((category) => (
@@ -44,7 +44,7 @@ const About = () => {
           ))}
         </div>
         <div className="title_content">
-          <h2>{messages.about.subtitle1}</h2>
+          <h2>{messages.about.subtitle2}</h2>
           <div className="about_line"></div>
         </div>
         <div className="timeline_cont">
