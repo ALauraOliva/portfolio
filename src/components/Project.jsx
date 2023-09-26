@@ -1,6 +1,12 @@
-import React from "react"
+import React, { useState } from "react"
 
 const Project = ({ project }) => {
+  const [isChecked, setIsChecked] = useState(false) // Inicialmente marcado
+
+  const handleRadioChange = () => {
+    setIsChecked(!isChecked) // Cambia el estado cuando se cambia el radio button
+  }
+
   return (
     <section
       id={project.name}
@@ -11,13 +17,14 @@ const Project = ({ project }) => {
           type="radio"
           name="radio"
           id={`project_${project.name.replace(/\s+/g, "_")}1`}
-          checked
+          onChange={handleRadioChange}
           readOnly
         />
         <input
           type="radio"
           name="radio"
           id={`project_${project.name.replace(/\s+/g, "_")}2`}
+          onChange={handleRadioChange}
           readOnly
         />
 
@@ -86,11 +93,15 @@ const Project = ({ project }) => {
         <label
           className="bar"
           htmlFor={`project_${project.name.replace(/\s+/g, "_")}1`}
-        ></label>
+        >
+          <img src="/static/svg/arrowLeft.svg" alt="ArrowLeft" />
+        </label>
         <label
-          className="bar"
+          className={`bar ${isChecked ? "hidden" : "visible"}`}
           htmlFor={`project_${project.name.replace(/\s+/g, "_")}2`}
-        ></label>
+        >
+          <img src="/static/svg/arrowRigth.svg" alt="ArrowRigth" />
+        </label>
       </div>
     </section>
   )
