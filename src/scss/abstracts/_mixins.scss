@@ -21,3 +21,9 @@
     @content;
   }
 }
+
+@mixin heightLogo {
+  @media screen and (max-height: 888px) {
+    @content;
+  }
+}
