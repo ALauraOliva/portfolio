@@ -45,7 +45,7 @@
     .about_resume {
       display: flex;
       flex-direction: row;
-      gap: 5rem;
+      gap: 2rem;
       margin: 7rem 0 2rem 0;
       @include mobile {
         flex-direction: column;
