@@ -33,10 +33,10 @@
   .about_info {
     background: #f2e8d5;
     box-shadow: inset 11px 11px 12px #e6dcca, inset -11px -11px 12px #fef4e0;
+    padding: 0 3rem 0 3rem;
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    padding: 0 3rem 0 3rem;
     /* WebKit (Chrome, Safari) */
     &::-webkit-scrollbar {
       width: 0;

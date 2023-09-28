@@ -32,10 +32,12 @@ const Project = ({ project }) => {
           <h1>{project.name}</h1>
           <div className="project_content">
             <div className="project_resume">
-              {project.resume}
-              <br />
-              <br />
-              <span>{project.resume_part2}</span>
+              <p>
+                {project.resume}
+                <br />
+                <br />
+                <span>{project.resume_part2}</span>
+              </p>
               <ul>
                 <li>
                   <a

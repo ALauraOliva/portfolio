@@ -30,12 +30,12 @@ html {
   height: 100dvh;
   font-size: 62.5%;
   @include mobile {
-    font-size: 4.8px; //30% modification because IPHONES!
+    font-size: 6px; //30% modification because IPHONES!
   } //1rem = 10px
   @include tablet {
     font-size: 8px; //50%
   }
   @include iphoneMini {
-    font-size: 4px; //25%
+    font-size: 4.5px; //25%
   }
 }

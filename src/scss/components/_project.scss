@@ -66,9 +66,10 @@
         text-align: center;
         width: 100%;
         font-variant: small-caps;
+        line-height: 8.5rem;
       }
       .project_content {
-        width: 80%;
+        width: 85%;
         display: flex;
         flex-direction: row;
         @include mobile {
@@ -80,9 +81,23 @@
           font-size: 1.5rem;
           line-height: 2rem;
           word-spacing: 1rem;
-          padding: 4rem;
-          font-weight: 200;
+          padding: 3rem 3rem 0 2rem;
+          font-weight: 300;
           box-sizing: border-box;
+          p {
+            max-height: calc(100dvh - 34rem);
+            overflow-y: scroll;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            /* WebKit (Chrome, Safari) */
+            &::-webkit-scrollbar {
+              width: 0;
+              background: transparent;
+            }
+            @include mobile {
+              max-height: calc(100dvh - 80rem);
+            }
+          }
           span {
             font-weight: 550;
           }
@@ -143,7 +158,19 @@
           flex: 1;
           display: flex;
           flex-direction: column;
-          padding: 4rem;
+          padding: 3rem 0 2rem 3rem;
+          max-height: calc(100dvh - 34rem);
+          overflow-y: scroll;
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+          /* WebKit (Chrome, Safari) */
+          &::-webkit-scrollbar {
+            width: 0;
+            background: transparent;
+          }
+          @include mobile {
+            max-height: calc(100dvh - 80rem);
+          }
           & > span {
             background: #2f2f2f;
             font-size: 1.5rem;
@@ -155,7 +182,7 @@
             margin: 0.5rem 0 0 0;
           }
           h2 {
-            font-size: 2.5rem;
+            font-size: 4rem;
             font-variant: small-caps;
             font-weight: 600;
             color: $secondaryColor;
@@ -232,8 +259,8 @@
         color: #2f2f2f;
       }
       @include mobile {
-        width: 15rem;
-        height: 5rem;
+        width: 10rem;
+        height: 3rem;
       }
     }
     .hidden {
