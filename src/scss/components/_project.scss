@@ -95,7 +95,7 @@
               background: transparent;
             }
             @include mobile {
-              max-height: calc(100dvh - 80rem);
+              max-height: calc(100dvh - 85rem);
             }
           }
           span {
@@ -169,7 +169,7 @@
             background: transparent;
           }
           @include mobile {
-            max-height: calc(100dvh - 80rem);
+            max-height: calc(100dvh - 85rem);
           }
           & > span {
             background: #2f2f2f;

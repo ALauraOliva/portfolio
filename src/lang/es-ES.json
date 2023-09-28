@@ -1,5 +1,5 @@
 {
-  "home_subTitle": "Transformo líneas de código en experiencias web únicas.",
+  "home_subTitle": "Transformando código en experiencias web únicas.",
   "about": {
     "title": "sobre MI",
     "p1": "Graduada en <span>Ingeniería de Sistemas</span>, en busca de emocionantes desafíos en el campo del desarrollo Full Stack, con un enfoque particular en el <span>Front-End</span>. También poseo habilidades sólidas en el <span>Back End</span>, lo que me permite comprender y abordar proyectos de manera integral, desde el diseño de la interfaz de usuario hasta la gestión de datos en el backend.",
@@ -162,7 +162,7 @@
 
   "contact": {
     "name": "Nombre",
-    "title": "CONTACTO",
+    "title": "Contacto",
     "phone": "Celular",
     "email": "Email",
     "message": "Mensaje",
