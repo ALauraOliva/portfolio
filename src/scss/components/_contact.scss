@@ -16,9 +16,6 @@
   }
   form {
     width: 50%;
-    -webkit-appearance: none;
-    appearance: none;
-
     .row {
       display: flex;
       align-items: center;
@@ -32,6 +29,8 @@
       margin-bottom: 4rem;
       input,
       textarea {
+        -webkit-appearance: none;
+        appearance: none;
         width: 100%;
         padding: 1rem;
         outline: 0;
