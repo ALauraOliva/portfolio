@@ -16,6 +16,9 @@
   }
   form {
     width: 50%;
+    -webkit-appearance: none;
+    appearance: none;
+
     .row {
       display: flex;
       align-items: center;
