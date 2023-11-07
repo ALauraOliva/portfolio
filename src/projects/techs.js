@@ -10,6 +10,11 @@ const techs = [
     category: "front",
   },
   {
+    techName: "TypeScript",
+    icon: "/static/svg/typescript.svg",
+    category: "front",
+  },
+  {
     techName: "HTML",
     icon: "/static/svg/htmlIcon.svg",
     category: "front",
@@ -85,6 +90,6 @@ const techs = [
     icon: "/static/svg/soapUiIcon.svg",
     category: "other",
   },
-]
+];
 
-export default techs
+export default techs;
