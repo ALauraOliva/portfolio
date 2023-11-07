@@ -49,8 +49,8 @@
       "role": ["Front - End"],
       "githubLink": "https://github.com/ALauraOliva/GreenLand",
       "deployLink": "https://greenland-client.vercel.app/",
-      "img1": "/static/greenland1.webp",
-      "img2": "/static/greenland2.webp",
+      "img1": "/static/GreenLand1.webp",
+      "img2": "/static/GreenLand2.webp",
       "tech": [
         "React",
         "Vite",
