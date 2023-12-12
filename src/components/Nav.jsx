@@ -1,21 +1,21 @@
-import React, { useState, useContext } from "react"
-import { langContext } from "../context/langContext"
-import { RxHamburgerMenu } from "react-icons/rx"
-import { RiCloseLine } from "react-icons/ri"
+import React, { useState, useContext } from "react";
+import { langContext } from "../context/langContext";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { RiCloseLine } from "react-icons/ri";
 
 const Nav = ({ colorLinks }) => {
-  const [isNavVisible, setIsNavVisible] = useState(false)
-  const { messages } = useContext(langContext)
+  const [isNavVisible, setIsNavVisible] = useState(false);
+  const { messages } = useContext(langContext);
 
   const openNav = () => {
-    setIsNavVisible(true)
-  }
+    setIsNavVisible(true);
+  };
 
   const closeNav = () => {
-    setIsNavVisible(false)
-  }
+    setIsNavVisible(false);
+  };
 
-  const linkColor = isNavVisible ? "#0c3a4d" : colorLinks
+  const linkColor = isNavVisible ? "#0c3a4d" : colorLinks;
 
   return (
     <nav className="nav_cont_global">
@@ -62,7 +62,7 @@ const Nav = ({ colorLinks }) => {
         </ul>
       </aside>
     </nav>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;

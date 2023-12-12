@@ -32,14 +32,17 @@
     .navCont_visible {
       opacity: 1;
       visibility: visible;
+      transform: translateX(0);
     }
     .navCont_hidden {
       opacity: 0;
       visibility: hidden;
+      transform: translateX(100%);
     }
   }
   .navCont {
     width: 50rem;
+    transition: transform 0.4s linear;
     @include mobileMenu {
       display: flex;
       flex-direction: column;
