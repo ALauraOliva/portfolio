@@ -4,7 +4,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { RiCloseLine } from "react-icons/ri";
 
 const Nav = ({ colorLinks }) => {
-  const [isNavVisible, setIsNavVisible] = useState(false);
+  const [isNavVisible, setIsNavVisible] = useState(false); //?hamburguer nav is visible?
   const { messages } = useContext(langContext);
 
   const openNav = () => {
@@ -28,7 +28,7 @@ const Nav = ({ colorLinks }) => {
       <aside
         className={`navCont ${
           isNavVisible ? "navCont_visible" : "navCont_hidden"
-        }`}
+        } ${linkColor === "#0c3a4d" && "navContBackColor"}`}
         id="nav"
       >
         <button
