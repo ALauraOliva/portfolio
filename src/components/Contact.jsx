@@ -1,14 +1,14 @@
-import React, { useRef, useState, useContext } from "react"
-import { langContext } from "../context/langContext"
-import emailjs from "@emailjs/browser"
+import React, { useRef, useState, useContext } from "react";
+import { langContext } from "../context/langContext";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const form = useRef()
-  const { messages } = useContext(langContext)
-  const [popupMessage, setPopupMessage] = useState(null)
+  const form = useRef();
+  const { messages } = useContext(langContext);
+  const [popupMessage, setPopupMessage] = useState(null);
 
   const sendEmail = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     emailjs
       .sendForm(
         "service_gevcm95",
@@ -18,19 +18,19 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          e.target.reset()
-          setPopupMessage(messages.contact.messageGood)
+          e.target.reset();
+          setPopupMessage(messages.contact.messageGood);
         },
         (error) => {
-          console.log(error.text)
-          setPopupMessage(messages.contact.messageBad)
+          console.log(error.text);
+          setPopupMessage(messages.contact.messageBad);
         }
-      )
-  }
+      );
+  };
 
   const closePopup = () => {
-    setPopupMessage(null)
-  }
+    setPopupMessage(null);
+  };
 
   return (
     <section id="contact" className="contact_section">
@@ -68,7 +68,7 @@ const Contact = () => {
         </div>
       )}
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
