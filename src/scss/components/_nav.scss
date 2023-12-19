@@ -31,10 +31,10 @@
   }
   @include mobileMenu {
     .navCont_visible {
-      animation: bounce-in-right 1.5s ease forwards;
+      animation: bounce-in-right 1.5s ease none;
     }
     .navCont_hidden {
-      animation: roll-out 1s ease forwards;
+      visibility: hidden;
     }
   }
   .navContBackColor {
