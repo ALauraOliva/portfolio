@@ -1,4 +1,4 @@
-@include animation-mixin(bounce-in-right);
+// @include animation-mixin(bounce-in-right);
 .nav_cont_global {
   position: absolute;
   display: flex;
@@ -31,7 +31,9 @@
   }
   @include mobileMenu {
     .navCont_visible {
-      animation: bounce-in-right 1.5s ease none;
+      opacity: 1;
+      visibility: visible;
+      // animation: bounce-in-right 1.5s ease none;
     }
     .navCont_hidden {
       visibility: hidden;
