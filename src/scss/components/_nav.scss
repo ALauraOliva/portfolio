@@ -1,3 +1,4 @@
+@include animation-mixin(bounce-in-right);
 .nav_cont_global {
   position: absolute;
   display: flex;
@@ -30,13 +31,10 @@
   }
   @include mobileMenu {
     .navCont_visible {
-      opacity: 1;
-      visibility: visible;
-      border-radius: 0px !important;
+      animation: bounce-in-right 1.5s ease forwards;
     }
     .navCont_hidden {
-      opacity: 0;
-      visibility: hidden;
+      animation: roll-out 1s ease forwards;
     }
   }
   .navContBackColor {
@@ -48,6 +46,7 @@
   }
   .navCont {
     width: 50rem;
+    border-radius: 0px !important;
     @include mobileMenu {
       display: flex;
       flex-direction: column;
