@@ -1,11 +1,15 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 const Project = ({ project }) => {
-  const [isChecked, setIsChecked] = useState(false) // Inicialmente marcado
+  const [isChecked, setIsChecked] = useState(false); // Inicialmente marcado
+  const [animationPlayed, setAnimationPlayed] = useState(false);
 
   const handleRadioChange = () => {
-    setIsChecked(!isChecked) // Cambia el estado cuando se cambia el radio button
-  }
+    setIsChecked(!isChecked); // Cambia el estado cuando se cambia el radio button
+    if (!animationPlayed) {
+      setAnimationPlayed(true); // Marca que la animación ya se ha reproducido
+    }
+  };
 
   return (
     <section
@@ -84,8 +88,16 @@ const Project = ({ project }) => {
         <article className="project_slide">
           <div className="project_imgs_cont">
             <div className="project_position">
-              <img src={project.img1} alt="img1" className="img1" />
-              <img src={project.img2} alt="img2" className="img2" />
+              <img
+                src={project.img1}
+                alt="img1"
+                className={animationPlayed ? "img1 playedDown" : "img1"}
+              />
+              <img
+                src={project.img2}
+                alt="img2"
+                className={animationPlayed ? "img2 playedUp" : "img2 "}
+              />
             </div>
           </div>
         </article>
@@ -106,7 +118,7 @@ const Project = ({ project }) => {
         </label>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;

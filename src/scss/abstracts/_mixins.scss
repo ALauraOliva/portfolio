@@ -39,4 +39,22 @@
       transform: translateX(0);
     }
   }
+
+  @keyframes slideDown {
+    from {
+      top: -100%;
+    }
+    to {
+      top: -6rem;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      bottom: -100%;
+    }
+    to {
+      bottom: -6rem;
+    }
+  }
 }
