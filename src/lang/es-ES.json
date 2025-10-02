@@ -11,6 +11,13 @@
 
   "timeLine": [
     {
+      "img": "/static/svg/workIcon.svg",
+      "alt": "workIcon",
+      "year": "2024 - 2025",
+      "title": "Software Developer | CodeTogether",
+      "description": "Desarrollé y diseñé aplicaciones web, migrando código legado a arquitecturas modernas aplicando principios SOLID y mejores prácticas de escalabilidad. Colaboré en frontend (React, Next.js, Redux, TypeScript, TailwindCSS) y backend, además de realizar pruebas con Cypress para garantizar calidad y estabilidad. También elaboré documentación técnica para clientes y participé en equipos multidisciplinarios remotos, mejorando la eficiencia de procesos internos y la experiencia del usuario."
+    },
+    {
       "img": "/static/svg/graduateIcon.svg",
       "alt": "graduateIcon",
       "year": "2023",

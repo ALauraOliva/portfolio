@@ -25,6 +25,11 @@ const techs = [
     category: "front",
   },
   {
+    techName: "Tailwind CSS",
+    icon: "/static/svg/tailwindcss.svg",
+    category: "front",
+  },
+  {
     techName: "React",
     icon: "/static/svg/reactIcon.svg",
     category: "front",
@@ -61,8 +66,18 @@ const techs = [
     category: "back",
   },
   {
+    techName: "Docker",
+    icon: "/static/svg/docker.svg",
+    category: "other",
+  },
+  {
     techName: "Scrum",
     icon: "/static/svg/scrumIcon.svg",
+    category: "other",
+  },
+  {
+    techName: "SOLID Principles",
+    icon: "/static/svg/solid-principles.svg",
     category: "other",
   },
   {

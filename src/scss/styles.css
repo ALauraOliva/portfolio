@@ -130,7 +130,7 @@ html {
 }
 @keyframes spin {
   0% {
-    tranform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
@@ -141,9 +141,9 @@ html {
   height: 25rem;
   padding: 1rem;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: top;
-     object-position: top;
+  object-position: top;
   border-radius: 50%;
   background: #f26457;
 }
@@ -159,7 +159,8 @@ html {
   display: flex;
   background-color: #0c3a4d;
   opacity: 1;
-  background-image: linear-gradient(#244d5e 1.3px, transparent 1.3px), linear-gradient(to right, #244d5e 1.3px, #0c3a4d 1.3px);
+  background-image: linear-gradient(#244d5e 1.3px, transparent 1.3px),
+    linear-gradient(to right, #244d5e 1.3px, #0c3a4d 1.3px);
   background-size: 2.6rem 2.6rem;
   z-index: 2;
   position: relative;
@@ -167,13 +168,13 @@ html {
 .home_right .home_rightContainer {
   margin: auto;
 }
-.home_right .home_rightContainer input[type=checkbox].toggle {
+.home_right .home_rightContainer input[type="checkbox"].toggle {
   position: absolute;
   opacity: 0;
   top: -9000px;
   left: -9000px;
 }
-.home_right .home_rightContainer input[type=checkbox].toggle + label {
+.home_right .home_rightContainer input[type="checkbox"].toggle + label {
   cursor: pointer;
   position: absolute;
   top: calc(100% - 5.5rem);
@@ -181,7 +182,7 @@ html {
   font-size: 2rem;
   display: flex;
 }
-.home_right .home_rightContainer input[type=checkbox].toggle + label::before {
+.home_right .home_rightContainer input[type="checkbox"].toggle + label::before {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -196,7 +197,7 @@ html {
   background-color: #f2e8d5;
   transition: 200ms ease-in-out;
 }
-.home_right .home_rightContainer input[type=checkbox].toggle + label::after {
+.home_right .home_rightContainer input[type="checkbox"].toggle + label::after {
   content: "";
   position: absolute;
   width: 1.9em;
@@ -207,14 +208,20 @@ html {
   background-color: #0c3a4d;
   transition: 200ms ease-in-out;
 }
-.home_right .home_rightContainer input[type=checkbox].toggle:checked + label {
+.home_right .home_rightContainer input[type="checkbox"].toggle:checked + label {
   color: red;
 }
-.home_right .home_rightContainer input[type=checkbox].toggle:checked + label::after {
+.home_right
+  .home_rightContainer
+  input[type="checkbox"].toggle:checked
+  + label::after {
   transform: translateX(100%);
   background-color: #f26457;
 }
-.home_right .home_rightContainer input[type=checkbox].toggle:checked + label::before {
+.home_right
+  .home_rightContainer
+  input[type="checkbox"].toggle:checked
+  + label::before {
   content: "  ES";
   color: #f26457;
 }
@@ -243,8 +250,8 @@ html {
   z-index: 1;
   pointer-events: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
   color: #f2e8d5;
@@ -541,7 +548,12 @@ html {
   display: flex;
   flex-wrap: wrap;
 }
-.about_section .about_info .about_categories .about_category .about_stack figure {
+.about_section
+  .about_info
+  .about_categories
+  .about_category
+  .about_stack
+  figure {
   margin: 2rem 2rem 0 2rem;
   padding: 0;
   flex: 1;
@@ -552,11 +564,23 @@ html {
   justify-content: center;
   align-items: center;
 }
-.about_section .about_info .about_categories .about_category .about_stack figure img {
+.about_section
+  .about_info
+  .about_categories
+  .about_category
+  .about_stack
+  figure
+  img {
   width: 4.5rem;
   height: 4.5rem;
 }
-.about_section .about_info .about_categories .about_category .about_stack figure figcaption {
+.about_section
+  .about_info
+  .about_categories
+  .about_category
+  .about_stack
+  figure
+  figcaption {
   margin: 1rem 1rem;
 }
 .about_section .about_info .timeline_cont {
@@ -700,7 +724,11 @@ html {
   width: 90%;
   height: 100%;
 }
-.project_section .project_slides .project_slide .project_imgs_cont .project_position {
+.project_section
+  .project_slides
+  .project_slide
+  .project_imgs_cont
+  .project_position {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -708,40 +736,70 @@ html {
   width: 100%;
   height: 100%;
 }
-.project_section .project_slides .project_slide .project_imgs_cont .project_position .img1 {
+.project_section
+  .project_slides
+  .project_slide
+  .project_imgs_cont
+  .project_position
+  .img1 {
   position: absolute;
   top: -6rem;
   left: 10rem;
   width: 28%;
 }
 @media screen and (max-width: 767px) {
-  .project_section .project_slides .project_slide .project_imgs_cont .project_position .img1 {
+  .project_section
+    .project_slides
+    .project_slide
+    .project_imgs_cont
+    .project_position
+    .img1 {
     height: 50%;
     left: 0rem;
     width: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1079px) {
-  .project_section .project_slides .project_slide .project_imgs_cont .project_position .img1 {
+  .project_section
+    .project_slides
+    .project_slide
+    .project_imgs_cont
+    .project_position
+    .img1 {
     width: 45%;
     left: 0rem;
   }
 }
-.project_section .project_slides .project_slide .project_imgs_cont .project_position .img2 {
+.project_section
+  .project_slides
+  .project_slide
+  .project_imgs_cont
+  .project_position
+  .img2 {
   position: absolute;
   bottom: -6rem;
   right: 10rem;
   width: 38%;
 }
 @media screen and (max-width: 767px) {
-  .project_section .project_slides .project_slide .project_imgs_cont .project_position .img2 {
+  .project_section
+    .project_slides
+    .project_slide
+    .project_imgs_cont
+    .project_position
+    .img2 {
     height: 50%;
     right: 0rem;
     width: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1079px) {
-  .project_section .project_slides .project_slide .project_imgs_cont .project_position .img2 {
+  .project_section
+    .project_slides
+    .project_slide
+    .project_imgs_cont
+    .project_position
+    .img2 {
     width: 50%;
     right: 0rem;
   }
@@ -761,7 +819,11 @@ html {
     flex-direction: column;
   }
 }
-.project_section .project_slides .project_slide .project_content .project_resume {
+.project_section
+  .project_slides
+  .project_slide
+  .project_content
+  .project_resume {
   color: #f2e8d5;
   flex: 1;
   font-size: 1.5rem;
@@ -771,21 +833,44 @@ html {
   font-weight: 200;
   box-sizing: border-box;
 }
-.project_section .project_slides .project_slide .project_content .project_resume span {
+.project_section
+  .project_slides
+  .project_slide
+  .project_content
+  .project_resume
+  span {
   font-weight: 550;
 }
-.project_section .project_slides .project_slide .project_content .project_resume ul {
+.project_section
+  .project_slides
+  .project_slide
+  .project_content
+  .project_resume
+  ul {
   display: flex;
   list-style-type: none;
   margin: 2rem 0 0 0;
   padding: 0;
 }
-.project_section .project_slides .project_slide .project_content .project_resume ul li {
+.project_section
+  .project_slides
+  .project_slide
+  .project_content
+  .project_resume
+  ul
+  li {
   margin-right: 2rem;
   width: 6rem;
   height: 6rem;
 }
-.project_section .project_slides .project_slide .project_content .project_resume ul li a {
+.project_section
+  .project_slides
+  .project_slide
+  .project_content
+  .project_resume
+  ul
+  li
+  a {
   display: flex;
   padding: 1rem;
   border-radius: 50%;
@@ -795,20 +880,40 @@ html {
   height: 100%;
   width: 100%;
 }
-.project_section .project_slides .project_slide .project_content .project_resume ul li a img {
+.project_section
+  .project_slides
+  .project_slide
+  .project_content
+  .project_resume
+  ul
+  li
+  a
+  img {
   width: 4rem;
   height: 4rem;
 }
-.project_section .project_slides .project_slide .project_content .project_resume ul li a:hover {
+.project_section
+  .project_slides
+  .project_slide
+  .project_content
+  .project_resume
+  ul
+  li
+  a:hover {
   transform: scale(1.2);
 }
-.project_section .project_slides .project_slide .project_content .project_resume tool-tip {
+.project_section
+  .project_slides
+  .project_slide
+  .project_content
+  .project_resume
+  tool-tip {
   position: absolute;
   z-index: 1;
   pointer-events: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
   color: #2f2f2f;
@@ -821,19 +926,39 @@ html {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-.project_section .project_slides .project_slide .project_content .project_resume :has(> tool-tip) {
+.project_section
+  .project_slides
+  .project_slide
+  .project_content
+  .project_resume
+  :has(> tool-tip) {
   position: relative;
 }
-.project_section .project_slides .project_slide .project_content .project_resume :has(> tool-tip):hover tool-tip {
+.project_section
+  .project_slides
+  .project_slide
+  .project_content
+  .project_resume
+  :has(> tool-tip):hover
+  tool-tip {
   opacity: 1;
 }
-.project_section .project_slides .project_slide .project_content .project_subContent {
+.project_section
+  .project_slides
+  .project_slide
+  .project_content
+  .project_subContent {
   flex: 1;
   display: flex;
   flex-direction: column;
   padding: 4rem;
 }
-.project_section .project_slides .project_slide .project_content .project_subContent > span {
+.project_section
+  .project_slides
+  .project_slide
+  .project_content
+  .project_subContent
+  > span {
   background: #2f2f2f;
   font-size: 1.5rem;
   color: #f2e8d5;
@@ -844,22 +969,49 @@ html {
   width: fit-content;
   margin: 0.5rem 0 0 0;
 }
-.project_section .project_slides .project_slide .project_content .project_subContent h2 {
+.project_section
+  .project_slides
+  .project_slide
+  .project_content
+  .project_subContent
+  h2 {
   font-size: 2.5rem;
   font-variant: small-caps;
   font-weight: 600;
   color: #f2e8d5;
   margin: 2rem 0 0 0;
 }
-.project_section .project_slides .project_slide .project_content .project_subContent .project_roles,
-.project_section .project_slides .project_slide .project_content .project_subContent .project_techs {
+.project_section
+  .project_slides
+  .project_slide
+  .project_content
+  .project_subContent
+  .project_roles,
+.project_section
+  .project_slides
+  .project_slide
+  .project_content
+  .project_subContent
+  .project_techs {
   margin: 2rem 0 0 0;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-.project_section .project_slides .project_slide .project_content .project_subContent .project_roles span,
-.project_section .project_slides .project_slide .project_content .project_subContent .project_techs span {
+.project_section
+  .project_slides
+  .project_slide
+  .project_content
+  .project_subContent
+  .project_roles
+  span,
+.project_section
+  .project_slides
+  .project_slide
+  .project_content
+  .project_subContent
+  .project_techs
+  span {
   background: #2f2f2f;
   font-size: 1.5rem;
   width: -moz-fit-content;
@@ -875,10 +1027,16 @@ html {
 .project_section .project_slides #project_GreenLand2:checked ~ .slide_checked {
   margin-left: -50%;
 }
-.project_section .project_slides #project_Rick_and_Morty1:checked ~ .slide_checked {
+.project_section
+  .project_slides
+  #project_Rick_and_Morty1:checked
+  ~ .slide_checked {
   margin-left: 0;
 }
-.project_section .project_slides #project_Rick_and_Morty2:checked ~ .slide_checked {
+.project_section
+  .project_slides
+  #project_Rick_and_Morty2:checked
+  ~ .slide_checked {
   margin-left: -50%;
 }
 .project_section .project_slides #project_Pokedex1:checked ~ .slide_checked {
@@ -1015,7 +1173,8 @@ html {
   font-size: 1.5rem;
   box-sizing: border-box;
 }
-.contact_section form .contact_inputGroup input:focus ~ label, .contact_section form .contact_inputGroup input:valid ~ label,
+.contact_section form .contact_inputGroup input:focus ~ label,
+.contact_section form .contact_inputGroup input:valid ~ label,
 .contact_section form .contact_inputGroup textarea:focus ~ label,
 .contact_section form .contact_inputGroup textarea:valid ~ label {
   top: -3rem;
@@ -1074,4 +1233,4 @@ html {
 }
 .contact_section .popup .popup-content .close:hover {
   color: red;
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
